@@ -1,0 +1,19 @@
+{
+  "name": "PhoneGone — Lost Phone Rescue Guide India",
+  "short_name": "PhoneGone",
+  "description": "Step-by-step checklist and verified official resources for lost or stolen phones in India.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#043629",
+  "theme_color": "#043629",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "en-IN",
+  "dir": "ltr"
+}

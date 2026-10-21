@@ -1,0 +1,2704 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#043629">
+  <meta name="description" content="PhoneGone is a calm, independent step-by-step rescue guide for lost or stolen phones in India. Verified official links for Google Find My Device, Apple Find My, CEIR, police reporting, and emergency helplines.">
+  <meta name="keywords" content="lost phone India, stolen mobile CEIR, Sanchar Saathi IMEI block, 112 emergency, 1930 cybercrime helpline, Find My Device Android, Apple Find My, duplicate SIM TRAI rule">
+  <meta name="author" content="PhoneGone">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PhoneGone — Lost Phone Rescue Guide India">
+  <meta property="og:description" content="Calm, step-by-step verified action checklist for lost or stolen phones in India. Official CEIR, police, SIM, and device locator links.">
+  <link rel="canonical" href="https://phonegone.myoss.in/">
+  <meta property="og:url" content="https://phonegone.myoss.in/">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:locale:alternate" content="hi_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PhoneGone — Lost Phone Rescue Guide India">
+  <meta name="twitter:description" content="Calm, step-by-step verified action checklist for lost or stolen phones in India. Official CEIR, police, SIM, and device locator links.">
+
+  <title>PhoneGone — Lost & Stolen Phone Rescue Guide (India)</title>
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <style>
+    /* ==========================================================================
+       PhoneGone Design System — Emerald Green, White, and Restrained Gold
+       Accessibility: High contrast (WCAG AAA), zero external dependencies,
+       zero tracking, mobile-first responsive layout (320px+).
+       ========================================================================== */
+    :root {
+      --em-deep: #032b21;
+      --em-dark: #043629;
+      --em-main: #064e3b;
+      --em-light: #0d5b4a;
+      --em-subtle: #e6f4ee;
+      --em-surface: #f2f8f5;
+      
+      --gold-dark: #8c6b1d;
+      --gold-main: #cda34f;
+      --gold-bright: #f5d485;
+      --gold-surface: #fefce8;
+      --gold-border: #fef08a;
+
+      --ink-primary: #0a1f1a;
+      --ink-secondary: #364b46;
+      --ink-tertiary: #526863;
+      
+      --bg-page: #f8faf9;
+      --bg-card: #ffffff;
+      --border-subtle: #dbe4df;
+      --border-focus: #064e3b;
+
+      --alert-red-bg: #fef2f2;
+      --alert-red-border: #fecaca;
+      --alert-red-text: #991b1b;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 2px 6px rgba(4, 54, 41, 0.04);
+      --shadow-md: 0 8px 24px rgba(4, 54, 41, 0.08);
+      --shadow-lg: 0 16px 40px rgba(4, 54, 41, 0.12);
+    }
+
+    /* Reset & Base Setup */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      color-scheme: light;
+    }
+
+    body {
+      background: var(--bg-page);
+      color: var(--ink-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", "Noto Sans Devanagari", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Accessibility Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      left: 1rem;
+      background: var(--gold-bright);
+      color: var(--em-deep);
+      padding: 0.75rem 1.25rem;
+      font-weight: 800;
+      border-radius: var(--radius-sm);
+      z-index: 1000;
+      text-decoration: none;
+      box-shadow: var(--shadow-md);
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 1rem;
+      outline: 3px solid var(--em-deep);
+    }
+
+    /* Focus Visible System */
+    a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--gold-main);
+      outline-offset: 3px;
+    }
+
+    /* Top Notice Banner */
+    .top-bar {
+      background: var(--em-deep);
+      color: #e5ede9;
+      font-size: 0.85rem;
+      padding: 0.65rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .top-bar strong {
+      color: var(--gold-bright);
+      font-weight: 700;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: linear-gradient(145deg, var(--em-deep) 0%, var(--em-main) 100%);
+      color: #ffffff;
+      padding: 1.25rem 1.25rem 3.5rem;
+      border-bottom: 3px solid var(--gold-main);
+      position: relative;
+    }
+    
+    .nav-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+    .brand-title span {
+      color: var(--gold-bright);
+    }
+    .brand-tagline {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #b5d5ca;
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .lang-switcher {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 0.5rem 0.85rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background 0.2s;
+    }
+    .lang-switcher:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-emergency-btn {
+      background: #dc2626;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 800;
+      padding: 0.5rem 0.85rem;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid #ef4444;
+      transition: background 0.15s;
+    }
+    .nav-emergency-btn:hover {
+      background: #b91c1c;
+    }
+
+    /* Hero Section */
+    .hero {
+      max-width: 820px;
+      margin: 2.5rem auto 0;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(245, 212, 133, 0.4);
+      color: var(--gold-bright);
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.25rem;
+      color: #ffffff;
+    }
+    .hero p {
+      font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+      line-height: 1.6;
+      color: #d1e5dd;
+      max-width: 680px;
+      margin: 0 auto 2rem;
+    }
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.4rem;
+      font-size: 0.98rem;
+      font-weight: 800;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+      min-height: 48px;
+    }
+    .btn:active {
+      transform: scale(0.98);
+    }
+    .btn-gold {
+      background: var(--gold-bright);
+      color: var(--em-deep);
+      box-shadow: 0 4px 14px rgba(205, 163, 79, 0.35);
+    }
+    .btn-gold:hover {
+      background: #f7dd9b;
+      box-shadow: 0 6px 20px rgba(205, 163, 79, 0.5);
+    }
+    .btn-translucent {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+    }
+    .btn-translucent:hover {
+      background: rgba(255, 255, 255, 0.22);
+    }
+    .btn-emerald {
+      background: var(--em-main);
+      color: #ffffff;
+    }
+    .btn-emerald:hover {
+      background: var(--em-dark);
+    }
+    .btn-secondary {
+      background: #e7eeea;
+      color: var(--ink-secondary);
+      border: 1px solid var(--border-subtle);
+    }
+    .btn-secondary:hover {
+      background: #dbe4df;
+    }
+
+    /* Layout Wrapper */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+      flex: 1;
+    }
+
+    /* Urgent 15-Minute Alert Box */
+    .urgent-banner {
+      margin: -2.25rem auto 2.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .urgent-card {
+      padding: 0.5rem 0.75rem;
+      border-left: 3px solid var(--em-main);
+    }
+    .urgent-card:nth-child(2) {
+      border-left-color: var(--gold-main);
+    }
+    .urgent-card:nth-child(3) {
+      border-left-color: #ef4444;
+    }
+    .urgent-card h2 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .urgent-card p {
+      font-size: 0.88rem;
+      color: var(--ink-tertiary);
+      line-height: 1.5;
+    }
+
+    /* Section Headers */
+    .section-header {
+      margin: 3rem 0 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .section-header h2 {
+      font-size: 1.65rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--ink-primary);
+      line-height: 1.2;
+    }
+    .section-header p {
+      font-size: 0.95rem;
+      color: var(--ink-tertiary);
+      margin-top: 0.25rem;
+    }
+
+    /* Scenario Tabs */
+    .scenario-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    .scenario-tab {
+      background: var(--bg-card);
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.15rem 1rem;
+      text-align: left;
+      cursor: pointer;
+      color: var(--ink-primary);
+      transition: all 0.2s ease;
+      min-height: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .scenario-tab:hover {
+      border-color: var(--em-light);
+      background: var(--em-surface);
+    }
+    .scenario-tab.active {
+      border-color: var(--em-main);
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.12), var(--shadow-sm);
+    }
+    .scenario-tab-top {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.35rem;
+    }
+    .scenario-tab-icon {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+    .scenario-tab-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+    }
+    .scenario-tab-desc {
+      font-size: 0.85rem;
+      color: var(--ink-tertiary);
+      line-height: 1.35;
+    }
+
+    /* Checklist Progress Card */
+    .checklist-progress-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.65rem;
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--ink-secondary);
+    }
+    .progress-count {
+      color: var(--em-main);
+    }
+    .progress-track {
+      height: 10px;
+      background: #e5ece8;
+      border-radius: var(--radius-full);
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--em-main), var(--em-light));
+      border-radius: var(--radius-full);
+      transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Checklist Steps List */
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: start;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+    .step-card:hover {
+      border-color: #bccdc4;
+    }
+    .step-card.completed {
+      background: #f7faf8;
+      border-color: #d1ded6;
+    }
+    .step-card.completed .step-title {
+      text-decoration: line-through;
+      color: var(--ink-tertiary);
+    }
+    .step-checkbox {
+      width: 24px;
+      height: 24px;
+      accent-color: var(--em-main);
+      cursor: pointer;
+      margin-top: 0.2rem;
+    }
+    .step-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .step-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-sm);
+      background: var(--em-subtle);
+      color: var(--em-dark);
+    }
+    .step-tag.urgent-tag {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+    .step-tag.gold-tag {
+      background: var(--gold-surface);
+      color: var(--gold-dark);
+      border: 1px solid var(--gold-border);
+    }
+    .step-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+      margin: 0;
+      line-height: 1.35;
+    }
+    .step-desc {
+      font-size: 0.92rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+      margin: 0.2rem 0 0.5rem;
+    }
+    .step-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.25rem;
+      margin-top: 0.3rem;
+    }
+    .step-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--em-main);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .step-link:hover {
+      color: var(--em-deep);
+    }
+
+    /* Checklist Toolbar */
+    .checklist-toolbar {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+      align-items: center;
+    }
+
+    /* CEIR Document Assistant */
+    .ceir-section {
+      margin-top: 3.5rem;
+    }
+    .ceir-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .ceir-alert {
+      background: var(--gold-surface);
+      border: 1px solid var(--gold-border);
+      color: #713f12;
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: start;
+    }
+    .ceir-docs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    .ceir-doc-item {
+      background: #fafcfb;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.15rem;
+      display: flex;
+      align-items: start;
+      gap: 0.85rem;
+      cursor: pointer;
+      transition: border-color 0.15s, background-color 0.15s;
+    }
+    .ceir-doc-item:hover {
+      border-color: var(--em-light);
+      background: var(--em-surface);
+    }
+    .ceir-doc-item input {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--em-main);
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+    }
+    .ceir-doc-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .ceir-doc-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--radius-sm);
+      width: fit-content;
+    }
+    .badge-mandatory {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+    .badge-optional {
+      background: #e2e8f0;
+      color: #475569;
+    }
+    .ceir-doc-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+    }
+    .ceir-doc-note {
+      font-size: 0.82rem;
+      color: var(--ink-tertiary);
+    }
+
+    .ceir-action-buttons {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    /* Expandable IMEI Helper */
+    .imei-helper {
+      margin-top: 1.25rem;
+      background: var(--em-surface);
+      border: 1px solid #c7ded5;
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+    }
+    .imei-helper summary {
+      font-weight: 800;
+      color: var(--em-dark);
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .imei-helper-content {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+    }
+    .imei-helper-content ul {
+      padding-left: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    .imei-helper-content li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Emergency Helplines & Telecom Grid */
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+    .contact-card-header h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+    }
+    .helpline-box {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      margin-bottom: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .helpline-title {
+      font-weight: 800;
+      color: #991b1b;
+      font-size: 1rem;
+    }
+    .helpline-desc {
+      font-size: 0.82rem;
+      color: #7f1d1d;
+    }
+    .helpline-call-btn {
+      background: #dc2626;
+      color: #ffffff;
+      padding: 0.45rem 0.95rem;
+      border-radius: var(--radius-sm);
+      font-weight: 800;
+      font-size: 0.9rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .telecom-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .telecom-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem;
+      background: #f8faf9;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+    }
+    .telecom-name {
+      font-weight: 800;
+      color: var(--ink-primary);
+      font-size: 0.95rem;
+    }
+    .telecom-number {
+      font-size: 0.88rem;
+      color: var(--em-main);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    /* Official Service Directory */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+    .tool-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .tool-card:hover {
+      border-color: var(--em-light);
+      transform: translateY(-2px);
+    }
+    .tool-top {
+      margin-bottom: 1rem;
+    }
+    .tool-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--radius-sm);
+      background: var(--em-subtle);
+      color: var(--em-dark);
+      margin-bottom: 0.5rem;
+    }
+    .tool-card h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+      margin-bottom: 0.35rem;
+    }
+    .tool-card p {
+      font-size: 0.88rem;
+      color: var(--ink-tertiary);
+      line-height: 1.5;
+    }
+    .tool-card a {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--em-main);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Boundaries & Safety Section */
+    .boundaries-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .boundary-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+    .boundary-card.can {
+      border-top: 4px solid var(--em-main);
+    }
+    .boundary-card.cannot {
+      border-top: 4px solid #ef4444;
+    }
+    .boundary-card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .boundary-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .boundary-card li {
+      font-size: 0.92rem;
+      color: var(--ink-secondary);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      line-height: 1.5;
+    }
+    .boundary-card li span.ico {
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+    .faq-item:hover {
+      border-color: #bcd0c5;
+    }
+    .faq-item summary {
+      padding: 1.15rem 1.25rem;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-item summary::after {
+      content: "+";
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--em-main);
+      margin-left: 0.5rem;
+      transition: transform 0.2s;
+    }
+    .faq-item[open] summary::after {
+      content: "−";
+      transform: rotate(180deg);
+    }
+    .faq-body {
+      padding: 0 1.25rem 1.25rem;
+      font-size: 0.95rem;
+      color: var(--ink-secondary);
+      line-height: 1.6;
+      border-top: 1px solid #f1f5f3;
+      padding-top: 0.85rem;
+    }
+
+    /* Privacy Banner */
+    .privacy-banner {
+      margin-top: 3.5rem;
+      background: var(--em-surface);
+      border: 1px solid #c7ded5;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .privacy-icon {
+      font-size: 2.2rem;
+      line-height: 1;
+    }
+    .privacy-text h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--em-deep);
+      margin-bottom: 0.25rem;
+    }
+    .privacy-text p {
+      font-size: 0.9rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--em-deep);
+      color: #cbdad3;
+      padding: 3rem 1.25rem 2.5rem;
+      border-top: 3px solid var(--gold-main);
+      font-size: 0.9rem;
+    }
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+    }
+    .footer-brand strong {
+      color: #ffffff;
+      font-size: 1.3rem;
+      font-weight: 900;
+    }
+    .footer-brand strong span {
+      color: var(--gold-bright);
+    }
+    .footer-brand p {
+      margin-top: 0.6rem;
+      font-size: 0.88rem;
+      color: #9cb5ab;
+      line-height: 1.6;
+      max-width: 440px;
+    }
+    .footer-col h4 {
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 800;
+      margin-bottom: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-col a {
+      color: #d1e5dd;
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.15s;
+    }
+    .footer-col a:hover {
+      color: var(--gold-bright);
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      max-width: 1080px;
+      margin: 2.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.82rem;
+      color: #8da69c;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--em-deep);
+      color: #ffffff;
+      padding: 0.85rem 1.4rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      font-weight: 700;
+      font-size: 0.92rem;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid rgba(245, 212, 133, 0.4);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .toast.visible {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+      }
+      .top-bar, .nav-controls, .hero-actions, .checklist-toolbar, .toast, .skip-link {
+        display: none !important;
+      }
+      header {
+        background: #ffffff !important;
+        color: #000000 !important;
+        border-bottom: 2px solid #000000 !important;
+        padding: 1rem 0 !important;
+      }
+      .brand-title {
+        color: #000000 !important;
+      }
+      .brand-title span {
+        color: #333333 !important;
+      }
+      .hero h1 {
+        color: #000000 !important;
+        font-size: 20pt !important;
+      }
+      .hero p {
+        color: #333333 !important;
+      }
+      .urgent-banner {
+        border: 1px solid #333333 !important;
+        margin: 1rem 0 !important;
+      }
+      .step-card {
+        border: 1px solid #cccccc !important;
+        page-break-inside: avoid;
+        margin-bottom: 0.5rem;
+      }
+      .step-checkbox {
+        border: 1px solid #000000;
+      }
+      footer {
+        background: #ffffff !important;
+        color: #333333 !important;
+        border-top: 1px solid #000000 !important;
+      }
+      .footer-bottom {
+        border: none !important;
+      }
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 900px) {
+      .urgent-banner {
+        grid-template-columns: 1fr;
+        margin-top: -1.75rem;
+      }
+      .tools-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 680px) {
+      header {
+        padding: 1rem 1rem 2.5rem;
+      }
+      .scenario-tabs {
+        grid-template-columns: 1fr;
+      }
+      .ceir-docs-grid {
+        grid-template-columns: 1fr;
+      }
+      .contacts-grid {
+        grid-template-columns: 1fr;
+      }
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+      .boundaries-grid {
+        grid-template-columns: 1fr;
+      }
+      .step-card {
+        padding: 1rem;
+      }
+      .btn {
+        width: 100%;
+      }
+      .hero-actions {
+        flex-direction: column;
+      }
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* Reduced Motion Preference */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Accessibility Skip Navigation -->
+  <a href="#main-content" class="skip-link" data-i18n="skipLink">Skip to main content / मुख्य सामग्री पर जाएँ</a>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Official Notice">
+    <span data-i18n="topNotice"><strong>Notice:</strong> PhoneGone is an independent volunteer guide, not a government portal. Never enter passwords, OTPs, or IMEI numbers here.</span>
+  </aside>
+
+  <!-- Navigation & Hero Header -->
+  <header>
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="index.html" class="brand-group" aria-label="PhoneGone Home">
+        <img src="favicon.svg" alt="PhoneGone Logo" class="brand-icon" width="38" height="38">
+        <div class="brand-text">
+          <div class="brand-title">Phone<span>Gone</span></div>
+          <div class="brand-tagline" data-i18n="brandTagline">LOST PHONE RESCUE · INDIA</div>
+        </div>
+      </a>
+      <div class="nav-controls">
+        <select class="lang-switcher" id="langSelect" aria-label="Choose language / भाषा चुनें">
+          <option value="en">English (EN)</option>
+          <option value="hi">हिन्दी (HI)</option>
+        </select>
+        <a href="#emergency" class="nav-emergency-btn" data-i18n="emergencyNav">SOS: 112 & 1930</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-badge" data-i18n="heroBadge">✓ Calm & Verified Action Plan · No Sign-up Required</div>
+      <h1 data-i18n="heroTitle">Lost your phone?<br>Stay calm. Start here.</h1>
+      <p data-i18n="heroSubtitle">Step-by-step checklist to secure your bank & UPI accounts, report the loss, and reach official Government of India IMEI-blocking services.</p>
+      <div class="hero-actions">
+        <a href="#checklist" class="btn btn-gold" data-i18n="heroChecklistBtn">Build My Rescue Checklist ↓</a>
+        <a href="https://www.google.com/android/find/" target="_blank" rel="noopener noreferrer" class="btn btn-translucent" data-i18n="heroFindAndroidBtn">Android Device Locator ↗</a>
+        <a href="https://www.icloud.com/find" target="_blank" rel="noopener noreferrer" class="btn btn-translucent" data-i18n="heroFindAppleBtn">Apple Find My ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <!-- Immediate 15-Minute Safety & Financial Freeze Banner -->
+    <section class="urgent-banner" aria-label="Immediate Safety Actions">
+      <div class="urgent-card">
+        <h2 data-i18n="urgentSafetyTitle">🛡️ 1. Personal Safety First</h2>
+        <p data-i18n="urgentSafetyDesc">If your phone was stolen or snatched, do NOT chase or confront thieves. If you are hurt or in danger, dial 112 immediately from any available phone.</p>
+      </div>
+      <div class="urgent-card">
+        <h2 data-i18n="urgentSimTitle">⚡ 2. Block SIM & Protect UPI</h2>
+        <p data-i18n="urgentSimDesc">Thieves swap SIMs to receive OTPs for Google Pay, PhonePe, and NetBanking. Call your telecom provider immediately to suspend the lost SIM.</p>
+      </div>
+      <div class="urgent-card">
+        <h2 data-i18n="urgentLockTitle">🔒 3. Remote Lock / Erase</h2>
+        <p data-i18n="urgentLockDesc">Use a friend's phone or computer to sign into Google Find My Device or Apple iCloud Find. Put the device in Lost Mode with an alternate contact number.</p>
+      </div>
+    </section>
+
+    <!-- Checklist Section -->
+    <section id="checklist" aria-labelledby="checklistHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="checklistHeading" data-i18n="situationHeading">What happened to your phone?</h2>
+          <p data-i18n="situationSubheading">Select your scenario below to generate your tailored action checklist.</p>
+        </div>
+      </div>
+
+      <!-- Scenario Selector Tabs -->
+      <div class="scenario-tabs" role="tablist" aria-label="Phone loss scenarios">
+        <button class="scenario-tab active" id="tab-lost" role="tab" aria-selected="true" aria-controls="steps-panel" data-case="lost">
+          <div class="scenario-tab-top">
+            <span class="scenario-tab-icon">📍</span>
+            <div class="scenario-tab-title" data-i18n="tabLostTitle">Misplaced / Lost</div>
+          </div>
+          <div class="scenario-tab-desc" data-i18n="tabLostDesc">Left in auto, taxi, metro, office, restaurant, or home.</div>
+        </button>
+
+        <button class="scenario-tab" id="tab-stolen" role="tab" aria-selected="false" aria-controls="steps-panel" data-case="stolen">
+          <div class="scenario-tab-top">
+            <span class="scenario-tab-icon">🚨</span>
+            <div class="scenario-tab-title" data-i18n="tabStolenTitle">Stolen / Snatched</div>
+          </div>
+          <div class="scenario-tab-desc" data-i18n="tabStolenDesc">Theft, pickpocketing, snatching, or break-in suspected.</div>
+        </button>
+
+        <button class="scenario-tab" id="tab-found" role="tab" aria-selected="false" aria-controls="steps-panel" data-case="found">
+          <div class="scenario-tab-top">
+            <span class="scenario-tab-icon">✅</span>
+            <div class="scenario-tab-title" data-i18n="tabFoundTitle">Found / Recovered</div>
+          </div>
+          <div class="scenario-tab-desc" data-i18n="tabFoundDesc">Phone recovered; need to unblock IMEI and restore accounts.</div>
+        </button>
+      </div>
+
+      <!-- Progress Tracking -->
+      <div class="checklist-progress-card">
+        <div class="progress-info">
+          <span data-i18n="progressLabel">Checklist Progress</span>
+          <span class="progress-count" id="progressCount" aria-live="polite">0 of 6 completed (0%)</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+
+      <!-- Action Steps -->
+      <div id="steps-panel" role="tabpanel" class="steps-list" aria-live="polite">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+
+      <!-- Checklist Toolbar -->
+      <div class="checklist-toolbar">
+        <button type="button" class="btn btn-emerald" id="downloadChecklistBtn" data-i18n="downloadBtn">
+          📥 Download Checklist (.txt)
+        </button>
+        <button type="button" class="btn btn-secondary" id="printChecklistBtn" data-i18n="printBtn">
+          🖨️ Print / Save PDF
+        </button>
+        <button type="button" class="btn btn-secondary" id="resetChecklistBtn" data-i18n="resetBtn">
+          🔄 Reset Progress
+        </button>
+      </div>
+    </section>
+
+    <!-- CEIR Document Readiness Assistant -->
+    <section class="ceir-section" id="ceir-docs" aria-labelledby="ceirDocsHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="ceirDocsHeading" data-i18n="ceirTitle">CEIR (Central Equipment Identity Register) Readiness</h2>
+          <p data-i18n="ceirSubtitle">Before submitting an official IMEI-blocking request to the Department of Telecommunications (DoT), verify these prerequisites.</p>
+        </div>
+      </div>
+
+      <div class="ceir-card">
+        <div class="ceir-alert">
+          <span style="font-size:1.3rem">⚠️</span>
+          <div>
+            <strong data-i18n="ceirAlertTitle">Crucial TRAI 24-Hour Rule:</strong>
+            <span data-i18n="ceirAlertDesc">When you get a duplicate SIM from your telecom operator, TRAI security regulations block SMS services for 24 hours. You must wait 24 hours before the CEIR OTP can be received on that duplicate SIM.</span>
+          </div>
+        </div>
+
+        <div class="ceir-docs-grid" id="ceirDocList">
+          <label class="ceir-doc-item">
+            <input type="checkbox" id="doc-fir">
+            <div class="ceir-doc-text">
+              <span class="ceir-doc-badge badge-mandatory" data-i18n="mandatoryBadge">Mandatory</span>
+              <span class="ceir-doc-name" data-i18n="docFir">Police Report / FIR Copy</span>
+              <span class="ceir-doc-note" data-i18n="docFirNote">Digital copy (PDF/Image) & complaint number from police station or state citizen portal.</span>
+            </div>
+          </label>
+
+          <label class="ceir-doc-item">
+            <input type="checkbox" id="doc-sim">
+            <div class="ceir-doc-text">
+              <span class="ceir-doc-badge badge-mandatory" data-i18n="mandatoryBadge">Mandatory</span>
+              <span class="ceir-doc-name" data-i18n="docSim">Duplicate / Re-issued SIM with SMS Active</span>
+              <span class="ceir-doc-note" data-i18n="docSimNote">Same mobile number as lost phone. Needed to receive the CEIR OTP.</span>
+            </div>
+          </label>
+
+          <label class="ceir-doc-item">
+            <input type="checkbox" id="doc-id">
+            <div class="ceir-doc-text">
+              <span class="ceir-doc-badge badge-mandatory" data-i18n="mandatoryBadge">Mandatory</span>
+              <span class="ceir-doc-name" data-i18n="docId">Valid Government Photo ID</span>
+              <span class="ceir-doc-note" data-i18n="docIdNote">Masked Aadhaar, Voter ID, PAN card, Driving License, or Passport.</span>
+            </div>
+          </label>
+
+          <label class="ceir-doc-item">
+            <input type="checkbox" id="doc-imei">
+            <div class="ceir-doc-text">
+              <span class="ceir-doc-badge badge-mandatory" data-i18n="mandatoryBadge">Mandatory</span>
+              <span class="ceir-doc-name" data-i18n="docImei">15-Digit IMEI Number(s)</span>
+              <span class="ceir-doc-note" data-i18n="docImeiNote">IMEI 1 and IMEI 2 for dual-SIM phones (from phone box, bill, Google, or Apple ID).</span>
+            </div>
+          </label>
+
+          <label class="ceir-doc-item" style="grid-column: 1 / -1;">
+            <input type="checkbox" id="doc-bill">
+            <div class="ceir-doc-text">
+              <span class="ceir-doc-badge badge-optional" data-i18n="optionalBadge">Optional</span>
+              <span class="ceir-doc-name" data-i18n="docBill">Purchase Invoice / Bill</span>
+              <span class="ceir-doc-note" data-i18n="docBillNote">Recommended if available, but NOT mandatory if invoice cannot be located.</span>
+            </div>
+          </label>
+        </div>
+
+        <details class="imei-helper">
+          <summary data-i18n="imeiHelperTitle">How to find your IMEI without having your phone</summary>
+          <div class="imei-helper-content" data-i18n="imeiHelperContent">
+            <ul>
+              <li><strong>Android devices:</strong> Go to <a href="https://www.google.com/android/find/" target="_blank" rel="noopener noreferrer">google.com/android/find</a>, sign in, and click the <strong>(i) info icon</strong> next to your device model to view its IMEI.</li>
+              <li><strong>Apple devices:</strong> Go to <a href="https://appleid.apple.com/" target="_blank" rel="noopener noreferrer">appleid.apple.com</a>, sign in, click <strong>Devices</strong>, and select your iPhone to reveal its IMEI.</li>
+              <li><strong>Phone Retail Box:</strong> Check the white barcode label on the back or bottom of the original device packaging.</li>
+              <li><strong>Purchase Invoice:</strong> Check your receipt from Amazon, Flipkart, Croma, Reliance Digital, or your local retailer where the IMEI is printed.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="ceir-action-buttons">
+          <a href="https://ceir.sancharsaathi.gov.in/Request/CeirUserBlockRequestDirect.jsp" target="_blank" rel="noopener noreferrer" class="btn btn-emerald" data-i18n="ceirBlockBtn">
+            Official CEIR Block Request Form ↗
+          </a>
+          <a href="https://ceir.sancharsaathi.gov.in/Request/CeirUserUnblockRequestDirect.jsp" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="ceirUnblockBtn">
+            Official CEIR Unblock Request Form ↗
+          </a>
+          <a href="https://ceir.sancharsaathi.gov.in/Request/CeirRequestStatus.jsp" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="ceirStatusBtn">
+            Check Request Status ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Contacts & Telecom Helplines -->
+    <section id="emergency" aria-labelledby="emergencyHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="emergencyHeading" data-i18n="emergencyHeading">Emergency Helplines & Telecom Providers</h2>
+          <p data-i18n="emergencySubheading">Free 24x7 emergency contacts for police, financial cyber fraud, and immediate SIM blocking.</p>
+        </div>
+      </div>
+
+      <div class="contacts-grid">
+        <div class="contact-card">
+          <div class="contact-card-header">
+            <span style="font-size:1.5rem">🚨</span>
+            <h3 data-i18n="nationalHelplinesTitle">National Emergency Helplines</h3>
+          </div>
+
+          <div class="helpline-box">
+            <div>
+              <div class="helpline-title">112 — National Emergency (Police/ERSS)</div>
+              <div class="helpline-desc" data-i18n="helpline112Desc">For immediate physical danger, assault, or theft in progress. Works without SIM or unlock.</div>
+            </div>
+            <a href="tel:112" class="helpline-call-btn" data-i18n="call112Btn">Call 112</a>
+          </div>
+
+          <div class="helpline-box" style="background:#fefce8;border-color:#fef08a;">
+            <div>
+              <div class="helpline-title" style="color:#854d0e;">1930 — National Cyber Crime Helpline</div>
+              <div class="helpline-desc" style="color:#713f12;" data-i18n="helpline1930Desc">Report unauthorized UPI or bank debits immediately within the Golden Hour to freeze stolen funds.</div>
+            </div>
+            <a href="tel:1930" class="helpline-call-btn" style="background:#ca8a04;" data-i18n="call1930Btn">Call 1930</a>
+          </div>
+
+          <div style="margin-top:1rem;font-size:0.85rem;color:var(--ink-tertiary);line-height:1.5;">
+            <strong data-i18n="upiNoticeTitle">Protect UPI (GPay / PhonePe / Paytm):</strong>
+            <span data-i18n="upiNoticeDesc">Once your telecom operator suspends your SIM, UPI cannot re-authenticate. You can also call your bank's 24x7 helpline to temporarily freeze net banking and debit cards.</span>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-header">
+            <span style="font-size:1.5rem">📶</span>
+            <h3 data-i18n="telecomTitle">Indian Telecom SIM Blocking</h3>
+          </div>
+          <div class="telecom-list">
+            <div class="telecom-item">
+              <div>
+                <div class="telecom-name">Reliance Jio</div>
+                <div style="font-size:0.8rem;color:var(--ink-tertiary);">199 (from Jio) / 1800-889-9999</div>
+              </div>
+              <a href="tel:18008899999" class="telecom-number">1800-889-9999 📞</a>
+            </div>
+
+            <div class="telecom-item">
+              <div>
+                <div class="telecom-name">Bharti Airtel</div>
+                <div style="font-size:0.8rem;color:var(--ink-tertiary);">121 / 198 (from Airtel) / 1800-103-6065</div>
+              </div>
+              <a href="tel:18001036065" class="telecom-number">1800-103-6065 📞</a>
+            </div>
+
+            <div class="telecom-item">
+              <div>
+                <div class="telecom-name">Vodafone Idea (Vi)</div>
+                <div style="font-size:0.8rem;color:var(--ink-tertiary);">199 / 198 (from Vi) / 1800-123-4567</div>
+              </div>
+              <a href="tel:18001234567" class="telecom-number">1800-123-4567 📞</a>
+            </div>
+
+            <div class="telecom-item">
+              <div>
+                <div class="telecom-name">BSNL</div>
+                <div style="font-size:0.8rem;color:var(--ink-tertiary);">1503 (from BSNL) / 1800-180-1503</div>
+              </div>
+              <a href="tel:18001801503" class="telecom-number">1800-180-1503 📞</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Official Tools Directory -->
+    <section id="tools" aria-labelledby="toolsHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="toolsHeading" data-i18n="toolsTitle">Verified Official Services Directory</h2>
+          <p data-i18n="toolsSubtitle">Always use official domains ending in .gov.in or direct vendor platforms. PhoneGone never submits requests for you.</p>
+        </div>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-top">
+            <span class="tool-badge">Google</span>
+            <h3 data-i18n="toolAndroidTitle">Android Find My Device</h3>
+            <p data-i18n="toolAndroidDesc">Locate, play sound, lock, or remotely erase your Android device using your Google account.</p>
+          </div>
+          <a href="https://www.google.com/android/find/" target="_blank" rel="noopener noreferrer" data-i18n="openOfficial">Open google.com/android/find ↗</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-top">
+            <span class="tool-badge">Apple</span>
+            <h3 data-i18n="toolAppleTitle">Apple iCloud Find Devices</h3>
+            <p data-i18n="toolAppleDesc">Put your iPhone into Lost Mode, lock device, display phone number, or remotely erase data.</p>
+          </div>
+          <a href="https://www.icloud.com/find" target="_blank" rel="noopener noreferrer" data-i18n="openOfficial">Open icloud.com/find ↗</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-top">
+            <span class="tool-badge">Govt of India (DoT)</span>
+            <h3 data-i18n="toolCeirTitle">Sanchar Saathi / CEIR</h3>
+            <p data-i18n="toolCeirDesc">Official Department of Telecommunications portal to blacklist lost or stolen handset IMEIs across all Indian networks.</p>
+          </div>
+          <a href="https://ceir.sancharsaathi.gov.in/Request/CeirUserBlockRequestDirect.jsp" target="_blank" rel="noopener noreferrer" data-i18n="openOfficial">Open ceir.sancharsaathi.gov.in ↗</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-top">
+            <span class="tool-badge">Govt of India (MHA)</span>
+            <h3 data-i18n="toolCyberTitle">National Cyber Crime Portal</h3>
+            <p data-i18n="toolCyberDesc">Report online financial cyber fraud, stolen banking credentials, or cyber extortion directly to law enforcement.</p>
+          </div>
+          <a href="https://cybercrime.gov.in/" target="_blank" rel="noopener noreferrer" data-i18n="openOfficial">Open cybercrime.gov.in ↗</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-top">
+            <span class="tool-badge">Govt of India (MHA)</span>
+            <h3 data-i18n="toolPoliceTitle">Digital Police Citizen Portal</h3>
+            <p data-i18n="toolPoliceDesc">National portal to search citizen police services, state e-FIR portals, and check police station contacts.</p>
+          </div>
+          <a href="https://www.digitalpolice.gov.in/" target="_blank" rel="noopener noreferrer" data-i18n="openOfficial">Open digitalpolice.gov.in ↗</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-top">
+            <span class="tool-badge">Account Security</span>
+            <h3 data-i18n="toolGoogleSecTitle">Google Security Checkup</h3>
+            <p data-i18n="toolGoogleSecDesc">Remotely sign out of your Google account on the lost phone, change passwords, and inspect recent login sessions.</p>
+          </div>
+          <a href="https://myaccount.google.com/security" target="_blank" rel="noopener noreferrer" data-i18n="openOfficial">Open myaccount.google.com ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scope, Boundaries & Safety -->
+    <section id="boundaries" aria-labelledby="boundariesHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="boundariesHeading" data-i18n="boundariesTitle">What PhoneGone Can and Cannot Do</h2>
+          <p data-i18n="boundariesSubtitle">Honest boundaries so you always stay safe and reach verified authorities.</p>
+        </div>
+      </div>
+
+      <div class="boundaries-grid">
+        <div class="boundary-card can">
+          <h3 data-i18n="whatWeDoTitle">✅ What PhoneGone Does</h3>
+          <ul>
+            <li data-i18n="whatWeDo1"><span class="ico">✓</span> Provides a clear, prioritized checklist so you do not panic or skip critical steps.</li>
+            <li data-i18n="whatWeDo2"><span class="ico">✓</span> Connects you directly to verified Government of India (.gov.in) and vendor services.</li>
+            <li data-i18n="whatWeDo3"><span class="ico">✓</span> Saves your checklist progress 100% locally on your browser.</li>
+            <li data-i18n="whatWeDo4"><span class="ico">✓</span> Generates a downloadable or printable action plan to take to the police station or telecom store.</li>
+            <li data-i18n="whatWeDo5"><span class="ico">✓</span> 100% free, volunteer-built, zero trackers, zero ads, zero user accounts.</li>
+          </ul>
+        </div>
+
+        <div class="boundary-card cannot">
+          <h3 data-i18n="whatWeCannotDoTitle">❌ What PhoneGone Cannot Do</h3>
+          <ul>
+            <li data-i18n="whatWeCannot1"><span class="ico">✕</span> Cannot track or pinpoint your phone’s GPS location.</li>
+            <li data-i18n="whatWeCannot2"><span class="ico">✕</span> Cannot access telecom networks or block your SIM card.</li>
+            <li data-i18n="whatWeCannot3"><span class="ico">✕</span> Cannot submit police complaints or CEIR IMEI-blocking requests for you.</li>
+            <li data-i18n="whatWeCannot4"><span class="ico">✕</span> Does NOT collect or store your IMEI, passwords, Aadhaar, or bank details.</li>
+            <li data-i18n="whatWeCannot5"><span class="ico">✕</span> Is NOT an emergency responder and NOT affiliated with the Government of India, DoT, or Police.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section id="faq" aria-labelledby="faqHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="faqHeading" data-i18n="faqTitle">Frequently Asked Questions</h2>
+          <p data-i18n="faqSubtitle">Answers to the most common doubts about lost phones in India.</p>
+        </div>
+      </div>
+
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary data-i18n="faq1Q">Can PhoneGone track or find my phone?</summary>
+          <div class="faq-body" data-i18n="faq1A">
+            No. PhoneGone is strictly an informational rescue guide. Only official device locators (Google Find My Device for Android, Apple iCloud Find for iPhone) or authorized law enforcement agencies using telecom tower data can track a device. Never pay third-party websites claiming to track your phone via IMEI number; those are scams.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary data-i18n="faq2Q">What is CEIR and does it really block the phone?</summary>
+          <div class="faq-body" data-i18n="faq2A">
+            Yes. The Central Equipment Identity Register (CEIR) is an official initiative by the Department of Telecommunications (DoT), Government of India. When you submit a valid blocking request with a police report, the device's IMEI is blacklisted across all Indian telecom networks (Jio, Airtel, Vi, BSNL). Even if a thief changes the SIM card, the handset will not connect to any cellular network, and a police trace alert is generated.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary data-i18n="faq3Q">Why do I need a duplicate SIM before CEIR, and why is the OTP delayed?</summary>
+          <div class="faq-body" data-i18n="faq3A">
+            The official CEIR portal sends a verification OTP to the exact mobile number that was lost in the handset. Because you no longer have the original SIM, you must get a duplicate SIM from your telecom operator. Under TRAI cybersecurity regulations, incoming and outgoing SMS is blocked for 24 hours on newly swapped SIM cards to prevent SIM swap fraud. You must wait 24 hours after SIM activation before you can receive the CEIR OTP.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary data-i18n="faq4Q">Should I file an FIR or a Lost Article Report?</summary>
+          <div class="faq-body" data-i18n="faq4A">
+            If your phone was stolen, pickpocketed, or snatched, that is a cognizable criminal offense and you should file an FIR (First Information Report) at the local police station or via your State Police e-FIR portal. If you simply misplaced or left your phone somewhere, many state police portals provide a "Lost Property / Missing Article Report" service. The CEIR portal accepts both valid police FIRs and online Lost Article complaints.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary data-i18n="faq5Q">How do I prevent thieves from misusing Google Pay, PhonePe, or Paytm?</summary>
+          <div class="faq-body" data-i18n="faq5A">
+            In India, UPI requires device binding via your SIM card. Step 1: Immediately call your telecom operator to block your SIM; once the SIM is deactivated, UPI cannot function. Step 2: Call your bank's 24x7 helpline to temporarily freeze UPI access and net banking. Step 3: Contact payment app helplines (Paytm: 0120-3888388, PhonePe: 080-68727374) to temporarily deactivate your account.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary data-i18n="faq6Q">If I remotely erase my iPhone, can the thief use it?</summary>
+          <div class="faq-body" data-i18n="faq6A">
+            No, as long as "Find My" was enabled before the loss. When you remotely erase an iPhone, "Activation Lock" remains active. The phone cannot be set up or reactivated without your Apple Account password. Crucial warning: When erasing, DO NOT choose "Remove from Account"; doing so removes Activation Lock and gives the thief a usable phone.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary data-i18n="faq7Q">How do I unblock my phone if it is recovered?</summary>
+          <div class="faq-body" data-i18n="faq7A">
+            Visit the official CEIR Unblock Request form (ceir.sancharsaathi.gov.in/Request/CeirUserUnblockRequestDirect.jsp). Enter the 18-digit Request ID you received when blocking, the mobile number you provided, the reason for unblocking (e.g., "Found by self" or "Recovered by police"), and the OTP received on your mobile. Once approved, the IMEI will be restored across telecom networks.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary data-i18n="faq8Q">Does PhoneGone store any of my personal data?</summary>
+          <div class="faq-body" data-i18n="faq8A">
+            No. PhoneGone is completely client-side. There is no user database, no tracking cookies, no advertising scripts, and no backend server receiving your data. Your checklist progress is stored solely in your current browser's localStorage and can be wiped instantly by clicking "Reset Progress".
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Privacy & Local-Only Assurance -->
+    <aside class="privacy-banner" aria-label="Privacy & Security Assurance">
+      <div class="privacy-icon">🔒</div>
+      <div class="privacy-text">
+        <h3 data-i18n="privacyTitle">100% Client-Side Privacy Guarantee</h3>
+        <p data-i18n="privacyDesc">PhoneGone does not collect, transmit, or store your personal information, IMEI, OTPs, or police complaint files. All checklist state stays directly inside your browser. No analytics trackers or external advertising scripts are loaded.</p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>Phone<span>Gone</span></strong>
+        <p data-i18n="footerMission">A free, independent, open public guide helping people in India take calm, verified, and secure steps after losing a mobile phone.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footerColGovt">Government Services</h4>
+        <ul>
+          <li><a href="https://sancharsaathi.gov.in/" target="_blank" rel="noopener noreferrer">Sanchar Saathi (DoT) ↗</a></li>
+          <li><a href="https://ceir.sancharsaathi.gov.in/Request/CeirUserBlockRequestDirect.jsp" target="_blank" rel="noopener noreferrer">CEIR IMEI Blocking ↗</a></li>
+          <li><a href="https://ceir.sancharsaathi.gov.in/Request/CeirUserUnblockRequestDirect.jsp" target="_blank" rel="noopener noreferrer">CEIR IMEI Unblocking ↗</a></li>
+          <li><a href="https://cybercrime.gov.in/" target="_blank" rel="noopener noreferrer">Cyber Crime Portal (1930) ↗</a></li>
+          <li><a href="https://www.digitalpolice.gov.in/" target="_blank" rel="noopener noreferrer">Digital Police Citizen Portal ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footerColVendors">Device Locators</h4>
+        <ul>
+          <li><a href="https://www.google.com/android/find/" target="_blank" rel="noopener noreferrer">Google Find My Device ↗</a></li>
+          <li><a href="https://www.icloud.com/find" target="_blank" rel="noopener noreferrer">Apple iCloud Find ↗</a></li>
+          <li><a href="https://myaccount.google.com/security" target="_blank" rel="noopener noreferrer">Google Account Security ↗</a></li>
+          <li><a href="https://appleid.apple.com/" target="_blank" rel="noopener noreferrer">Apple ID Manage ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div data-i18n="footerDisclaimer">Independent Public Guide · Not affiliated with Government of India, DoT, Police, Google, or Apple.</div>
+      <div>PhoneGone © 2026 · Free & Open Public Resource</div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span id="toastMsg">Checklist updated</span>
+  </div>
+
+  <!-- JavaScript Implementation -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Application State
+      const state = {
+        lang: 'en',
+        scenario: 'lost',
+        stepsChecked: {},
+        docsChecked: {}
+      };
+
+      // Verified URLs
+      const URLS = {
+        googleFind: 'https://www.google.com/android/find/',
+        appleFind: 'https://www.icloud.com/find',
+        googleSecurity: 'https://myaccount.google.com/security',
+        appleId: 'https://appleid.apple.com/',
+        ceirBlock: 'https://ceir.sancharsaathi.gov.in/Request/CeirUserBlockRequestDirect.jsp',
+        ceirUnblock: 'https://ceir.sancharsaathi.gov.in/Request/CeirUserUnblockRequestDirect.jsp',
+        ceirStatus: 'https://ceir.sancharsaathi.gov.in/Request/CeirRequestStatus.jsp',
+        sancharSaathi: 'https://sancharsaathi.gov.in/',
+        cybercrime: 'https://cybercrime.gov.in/',
+        digitalPolice: 'https://www.digitalpolice.gov.in/',
+        erss112: 'tel:112',
+        cyber1930: 'tel:1930'
+      };
+
+      // Comprehensive English & Hindi Dictionaries
+      const i18n = {
+        en: {
+          skipLink: "Skip to main content",
+          topNotice: "<strong>Notice:</strong> PhoneGone is an independent volunteer guide, not a government portal. Never enter passwords, OTPs, or IMEI numbers here.",
+          brandTagline: "LOST PHONE RESCUE · INDIA",
+          emergencyNav: "SOS: 112 & 1930",
+          heroBadge: "✓ Calm & Verified Action Plan · No Sign-up Required",
+          heroTitle: "Lost your phone?<br>Stay calm. Start here.",
+          heroSubtitle: "Step-by-step checklist to secure your bank & UPI accounts, report the loss, and reach official Government of India IMEI-blocking services.",
+          heroChecklistBtn: "Build My Rescue Checklist ↓",
+          heroFindAndroidBtn: "Android Device Locator ↗",
+          heroFindAppleBtn: "Apple Find My ↗",
+
+          urgentSafetyTitle: "🛡️ 1. Personal Safety First",
+          urgentSafetyDesc: "If your phone was stolen or snatched, do NOT chase or confront thieves. If you are hurt or in danger, dial 112 immediately from any available phone.",
+          urgentSimTitle: "⚡ 2. Block SIM & Protect UPI",
+          urgentSimDesc: "Thieves swap SIMs to receive OTPs for Google Pay, PhonePe, and NetBanking. Call your telecom provider immediately to suspend the lost SIM.",
+          urgentLockTitle: "🔒 3. Remote Lock / Erase",
+          urgentLockDesc: "Use a friend's phone or computer to sign into Google Find My Device or Apple iCloud Find. Put the device in Lost Mode with an alternate contact number.",
+
+          situationHeading: "What happened to your phone?",
+          situationSubheading: "Select your scenario below to generate your tailored action checklist.",
+          tabLostTitle: "Misplaced / Lost",
+          tabLostDesc: "Left in auto, taxi, metro, office, restaurant, or home.",
+          tabStolenTitle: "Stolen / Snatched",
+          tabStolenDesc: "Theft, pickpocketing, snatching, or break-in suspected.",
+          tabFoundTitle: "Found / Recovered",
+          tabFoundDesc: "Phone recovered; need to unblock IMEI and restore accounts.",
+
+          progressLabel: "Checklist Progress",
+          progressFormat: "{completed} of {total} completed ({pct}%)",
+          downloadBtn: "📥 Download Checklist (.txt)",
+          printBtn: "🖨️ Print / Save PDF",
+          resetBtn: "🔄 Reset Progress",
+
+          ceirTitle: "CEIR (Central Equipment Identity Register) Readiness",
+          ceirSubtitle: "Before submitting an official IMEI-blocking request to the Department of Telecommunications (DoT), verify these prerequisites.",
+          ceirAlertTitle: "Crucial TRAI 24-Hour Rule:",
+          ceirAlertDesc: "When you get a duplicate SIM from your telecom operator, TRAI security regulations block SMS services for 24 hours. You must wait 24 hours before the CEIR OTP can be received on that duplicate SIM.",
+          mandatoryBadge: "Mandatory",
+          optionalBadge: "Optional",
+          docFir: "Police Report / FIR Copy",
+          docFirNote: "Digital copy (PDF/Image) & complaint number from police station or state citizen portal.",
+          docSim: "Duplicate / Re-issued SIM with SMS Active",
+          docSimNote: "Same mobile number as lost phone. Needed to receive the CEIR OTP.",
+          docId: "Valid Government Photo ID",
+          docIdNote: "Masked Aadhaar, Voter ID, PAN card, Driving License, or Passport.",
+          docImei: "15-Digit IMEI Number(s)",
+          docImeiNote: "IMEI 1 and IMEI 2 for dual-SIM phones (from phone box, bill, Google, or Apple ID).",
+          docBill: "Purchase Invoice / Bill",
+          docBillNote: "Recommended if available, but NOT mandatory if invoice cannot be located.",
+          imeiHelperTitle: "How to find your IMEI without having your phone",
+          imeiHelperContent: "<ul><li><strong>Android devices:</strong> Go to <a href='https://www.google.com/android/find/' target='_blank' rel='noopener noreferrer'>google.com/android/find</a>, sign in, and click the <strong>(i) info icon</strong> next to your device model to view its IMEI.</li><li><strong>Apple devices:</strong> Go to <a href='https://appleid.apple.com/' target='_blank' rel='noopener noreferrer'>appleid.apple.com</a>, sign in, click <strong>Devices</strong>, and select your iPhone to reveal its IMEI.</li><li><strong>Phone Retail Box:</strong> Check the white barcode label on the back or bottom of the original device packaging.</li><li><strong>Purchase Invoice:</strong> Check your receipt from Amazon, Flipkart, Croma, Reliance Digital, or your local retailer where the IMEI is printed.</li></ul>",
+          ceirBlockBtn: "Official CEIR Block Request Form ↗",
+          ceirUnblockBtn: "Official CEIR Unblock Request Form ↗",
+          ceirStatusBtn: "Check Request Status ↗",
+
+          emergencyHeading: "Emergency Helplines & Telecom Providers",
+          emergencySubheading: "Free 24x7 emergency contacts for police, financial cyber fraud, and immediate SIM blocking.",
+          nationalHelplinesTitle: "National Emergency Helplines",
+          helpline112Desc: "For immediate physical danger, assault, or theft in progress. Works without SIM or unlock.",
+          call112Btn: "Call 112",
+          helpline1930Desc: "Report unauthorized UPI or bank debits immediately within the Golden Hour to freeze stolen funds.",
+          call1930Btn: "Call 1930",
+          upiNoticeTitle: "Protect UPI (GPay / PhonePe / Paytm):",
+          upiNoticeDesc: "Once your telecom operator suspends your SIM, UPI cannot re-authenticate. You can also call your bank's 24x7 helpline to temporarily freeze net banking and debit cards.",
+          telecomTitle: "Indian Telecom SIM Blocking",
+
+          toolsTitle: "Verified Official Services Directory",
+          toolsSubtitle: "Always use official domains ending in .gov.in or direct vendor platforms. PhoneGone never submits requests for you.",
+          toolAndroidTitle: "Android Find My Device",
+          toolAndroidDesc: "Locate, play sound, lock, or remotely erase your Android device using your Google account.",
+          toolAppleTitle: "Apple iCloud Find Devices",
+          toolAppleDesc: "Put your iPhone into Lost Mode, lock device, display phone number, or remotely erase data.",
+          toolCeirTitle: "Sanchar Saathi / CEIR",
+          toolCeirDesc: "Official Department of Telecommunications portal to blacklist lost or stolen handset IMEIs across all Indian networks.",
+          toolCyberTitle: "National Cyber Crime Portal",
+          toolCyberDesc: "Report online financial cyber fraud, stolen banking credentials, or cyber extortion directly to law enforcement.",
+          toolPoliceTitle: "Digital Police Citizen Portal",
+          toolPoliceDesc: "National portal to search citizen police services, state e-FIR portals, and check police station contacts.",
+          toolGoogleSecTitle: "Google Security Checkup",
+          toolGoogleSecDesc: "Remotely sign out of your Google account on the lost phone, change passwords, and inspect recent login sessions.",
+          openOfficial: "Open official service ↗",
+
+          boundariesTitle: "What PhoneGone Can and Cannot Do",
+          boundariesSubtitle: "Honest boundaries so you always stay safe and reach verified authorities.",
+          whatWeDoTitle: "✅ What PhoneGone Does",
+          whatWeDo1: "<span class='ico'>✓</span> Provides a clear, prioritized checklist so you do not panic or skip critical steps.",
+          whatWeDo2: "<span class='ico'>✓</span> Connects you directly to verified Government of India (.gov.in) and vendor services.",
+          whatWeDo3: "<span class='ico'>✓</span> Saves your checklist progress 100% locally on your browser.",
+          whatWeDo4: "<span class='ico'>✓</span> Generates a downloadable or printable action plan to take to the police station or telecom store.",
+          whatWeDo5: "<span class='ico'>✓</span> 100% free, volunteer-built, zero trackers, zero ads, zero user accounts.",
+
+          whatWeCannotDoTitle: "❌ What PhoneGone Cannot Do",
+          whatWeCannot1: "<span class='ico'>✕</span> Cannot track or pinpoint your phone’s GPS location.",
+          whatWeCannot2: "<span class='ico'>✕</span> Cannot access telecom networks or block your SIM card.",
+          whatWeCannot3: "<span class='ico'>✕</span> Cannot submit police complaints or CEIR IMEI-blocking requests for you.",
+          whatWeCannot4: "<span class='ico'>✕</span> Does NOT collect or store your IMEI, passwords, Aadhaar, or bank details.",
+          whatWeCannot5: "<span class='ico'>✕</span> Is NOT an emergency responder and NOT affiliated with the Government of India, DoT, or Police.",
+
+          faqTitle: "Frequently Asked Questions",
+          faqSubtitle: "Answers to the most common doubts about lost phones in India.",
+          faq1Q: "Can PhoneGone track or find my phone?",
+          faq1A: "No. PhoneGone is strictly an informational rescue guide. Only official device locators (Google Find My Device for Android, Apple iCloud Find for iPhone) or authorized law enforcement agencies using telecom tower data can track a device. Never pay third-party websites claiming to track your phone via IMEI number; those are scams.",
+          faq2Q: "What is CEIR and does it really block the phone?",
+          faq2A: "Yes. The Central Equipment Identity Register (CEIR) is an official initiative by the Department of Telecommunications (DoT), Government of India. When you submit a valid blocking request with a police report, the device's IMEI is blacklisted across all Indian telecom networks (Jio, Airtel, Vi, BSNL). Even if a thief changes the SIM card, the handset will not connect to any cellular network, and a police trace alert is generated.",
+          faq3Q: "Why do I need a duplicate SIM before CEIR, and why is the OTP delayed?",
+          faq3A: "The official CEIR portal sends a verification OTP to the exact mobile number that was lost in the handset. Because you no longer have the original SIM, you must get a duplicate SIM from your telecom operator. Under TRAI cybersecurity regulations, incoming and outgoing SMS is blocked for 24 hours on newly swapped SIM cards to prevent SIM swap fraud. You must wait 24 hours after SIM activation before you can receive the CEIR OTP.",
+          faq4Q: "Should I file an FIR or a Lost Article Report?",
+          faq4A: "If your phone was stolen, pickpocketed, or snatched, that is a cognizable criminal offense and you should file an FIR (First Information Report) at the local police station or via your State Police e-FIR portal. If you simply misplaced or left your phone somewhere, many state police portals provide a 'Lost Property / Missing Article Report' service. The CEIR portal accepts both valid police FIRs and online Lost Article complaints.",
+          faq5Q: "How do I prevent thieves from misusing Google Pay, PhonePe, or Paytm?",
+          faq5A: "In India, UPI requires device binding via your SIM card. Step 1: Immediately call your telecom operator to block your SIM; once the SIM is deactivated, UPI cannot function. Step 2: Call your bank's 24x7 helpline to temporarily freeze UPI access and net banking. Step 3: Contact payment app helplines (Paytm: 0120-3888388, PhonePe: 080-68727374) to temporarily deactivate your account.",
+          faq6Q: "If I remotely erase my iPhone, can the thief use it?",
+          faq6A: "No, as long as 'Find My' was enabled before the loss. When you remotely erase an iPhone, 'Activation Lock' remains active. The phone cannot be set up or reactivated without your Apple Account password. Crucial warning: When erasing, DO NOT choose 'Remove from Account'; doing so removes Activation Lock and gives the thief a usable phone.",
+          faq7Q: "How do I unblock my phone if it is recovered?",
+          faq7A: "Visit the official CEIR Unblock Request form (ceir.sancharsaathi.gov.in/Request/CeirUserUnblockRequestDirect.jsp). Enter the 18-digit Request ID you received when blocking, the mobile number you provided, the reason for unblocking (e.g., 'Found by self' or 'Recovered by police'), and the OTP received on your mobile. Once approved, the IMEI will be restored across telecom networks.",
+          faq8Q: "Does PhoneGone store any of my personal data?",
+          faq8A: "No. PhoneGone is completely client-side. There is no user database, no tracking cookies, no advertising scripts, and no backend server receiving your data. Your checklist progress is stored solely in your current browser's localStorage and can be wiped instantly by clicking 'Reset Progress'.",
+
+          privacyTitle: "100% Client-Side Privacy Guarantee",
+          privacyDesc: "PhoneGone does not collect, transmit, or store your personal information, IMEI, OTPs, or police complaint files. All checklist state stays directly inside your browser. No analytics trackers or external advertising scripts are loaded.",
+          footerMission: "A free, independent, open public guide helping people in India take calm, verified, and secure steps after losing a mobile phone.",
+          footerColGovt: "Government Services",
+          footerColVendors: "Device Locators",
+          footerDisclaimer: "Independent Public Guide · Not affiliated with Government of India, DoT, Police, Google, or Apple.",
+
+          toastReset: "Checklist progress has been reset.",
+          toastDownloaded: "Checklist downloaded successfully.",
+          confirmReset: "Are you sure you want to reset all checklist and document progress?"
+        },
+
+        hi: {
+          skipLink: "मुख्य सामग्री पर जाएँ",
+          topNotice: "<strong>महत्वपूर्ण सूचना:</strong> PhoneGone एक स्वतंत्र नागरिक गाइड है, कोई सरकारी सेवा नहीं। यहाँ कभी भी पासवर्ड, OTP या IMEI नंबर न डालें।",
+          brandTagline: "खोया फोन सहायता · भारत",
+          emergencyNav: "आपातकालीन: 112 व 1930",
+          heroBadge: "✓ तनावमुक्त और सत्यापित कार्ययोजना · कोई खाता बनाने की आवश्यकता नहीं",
+          heroTitle: "फोन खो गया या चोरी हुआ?<br>घबराएँ नहीं। यहाँ से शुरू करें।",
+          heroSubtitle: "अपने बैंक और UPI खाते सुरक्षित करने, पुलिस रिपोर्ट दर्ज करने और भारत सरकार के आधिकारिक IMEI-ब्लॉकिंग पोर्टल तक पहुँचने के लिए स्पष्ट चेकलिस्ट।",
+          heroChecklistBtn: "मेरी सहायता चेकलिस्ट बनाएँ ↓",
+          heroFindAndroidBtn: "Android फोन लोकेटर ↗",
+          heroFindAppleBtn: "Apple Find My ↗",
+
+          urgentSafetyTitle: "🛡️ 1. अपनी सुरक्षा पहले",
+          urgentSafetyDesc: "यदि फोन छीना या चोरी हुआ है, तो अपराधियों का पीछा या सामना न करें। यदि कोई खतरा हो, तो किसी भी फोन से तुरंत 112 डायल करें।",
+          urgentSimTitle: "⚡ 2. सिम ब्लॉक करें व UPI रोकें",
+          urgentSimDesc: "अपराधी आपके सिम से Google Pay, PhonePe और नेट बैंकिंग के OTP प्राप्त कर सकते हैं। अपने मोबाइल ऑपरेटर को कॉल करके तुरंत सिम बंद कराएं।",
+          urgentLockTitle: "🔒 3. रिमोट लॉक या डेटा मिटाएँ",
+          urgentLockDesc: "किसी मित्र के फोन या कंप्यूटर से Google Find My Device या Apple Find My में लॉग इन करें। डिवाइस को लॉस्ट मोड पर डालें और स्क्रीन पर संपर्क नंबर छोड़ें।",
+
+          situationHeading: "आपके फोन के साथ क्या हुआ?",
+          situationSubheading: "अपनी स्थिति चुनें ताकि उसी के अनुसार आपकी चेकलिस्ट तैयार हो सके।",
+          tabLostTitle: "फोन खो गया / छूट गया",
+          tabLostDesc: "ऑटो, टैक्सी, मेट्रो, दफ्तर, रेस्टोरेंट या घर में कहीं छूट गया।",
+          tabStolenTitle: "चोरी / छीना गया",
+          tabStolenDesc: "जेबकतरी, छीन-झपट, चोरी या डकैती का संदेह है।",
+          tabFoundTitle: "फोन वापस मिल गया",
+          tabFoundDesc: "फोन मिल चुका है; IMEI अनब्लॉक करना और खाते बहाल करना है।",
+
+          progressLabel: "चेकलिस्ट प्रगति",
+          progressFormat: "{total} में से {completed} पूर्ण ({pct}%)",
+          downloadBtn: "📥 चेकलिस्ट डाउनलोड करें (.txt)",
+          printBtn: "🖨️ प्रिंट या PDF सेव करें",
+          resetBtn: "🔄 प्रगति रीसेट करें",
+
+          ceirTitle: "CEIR (केंद्रीय उपकरण पहचान रजिस्टर) दस्तावेज़ तैयारी",
+          ceirSubtitle: "दूरसंचार विभाग (DoT) के आधिकारिक पोर्टल पर IMEI ब्लॉक करने से पहले ये पूर्व-शर्तें जांच लें।",
+          ceirAlertTitle: "TRAI का 24-घंटे का अनिवार्य नियम:",
+          ceirAlertDesc: "जब आप मोबाइल ऑपरेटर से डुप्लीकेट सिम लेते हैं, तो सुरक्षा कारणों से उस पर 24 घंटे तक SMS सेवा बंद रहती है। CEIR का OTP पाने के लिए आपको सिम चालू होने के 24 घंटे बाद तक प्रतीक्षा करनी होगी।",
+          mandatoryBadge: "अनिवार्य",
+          optionalBadge: "वैकल्पिक",
+          docFir: "पुलिस रिपोर्ट / FIR की कॉपी",
+          docFirNote: "थाने या राज्य पुलिस पोर्टल से मिली डिजिटल कॉपी (PDF/फोटो) और शिकायत संख्या।",
+          docSim: "सक्रिय SMS वाली डुप्लीकेट / दोबारा जारी सिम",
+          docSimNote: "खोए नंबर वाली वही सिम। CEIR का OTP इसी पर आएगा।",
+          docId: "मान्य सरकारी फोटो पहचान पत्र",
+          docIdNote: "मास्क्ड आधार (Masked Aadhaar), वोटर कार्ड, पैन कार्ड, ड्राइविंग लाइसेंस या पासपोर्ट।",
+          docImei: "15 अंकों का IMEI नंबर (दोनों सिम के लिए)",
+          docImeiNote: "फोन के डिब्बे, बिल, Google अकाउंट या Apple ID से प्राप्त 15 अंकों का नंबर।",
+          docBill: "खरीद का बिल / रसीद (Invoice)",
+          docBillNote: "यदि उपलब्ध हो तो अपलोड करें, लेकिन बिल न मिलने पर भी प्रक्रिया रुकती नहीं है।",
+          imeiHelperTitle: "फोन के बिना IMEI नंबर कैसे पता करें?",
+          imeiHelperContent: "<ul><li><strong>Android फोन:</strong> <a href='https://www.google.com/android/find/' target='_blank' rel='noopener noreferrer'>google.com/android/find</a> पर जाएं, लॉग इन करें और अपने फोन के नाम के पास <strong>(i) इन्फो आइकन</strong> दबाकर IMEI देखें।</li><li><strong>Apple iPhone:</strong> <a href='https://appleid.apple.com/' target='_blank' rel='noopener noreferrer'>appleid.apple.com</a> पर जाएं, <strong>Devices</strong> में अपने iPhone पर क्लिक करके IMEI देखें।</li><li><strong>फोन का डिब्बा:</strong> मूल पैकेजिंग बॉक्स के पीछे या नीचे लगे बारकोड स्टिकर पर 15 अंकों का IMEI लिखा होता है।</li><li><strong>खरीद रसीद:</strong> Amazon, Flipkart या दुकान के मूल बिल पर IMEI लिखा होता है।</li></ul>",
+          ceirBlockBtn: "आधिकारिक CEIR ब्लॉक फॉर्म ↗",
+          ceirUnblockBtn: "आधिकारिक CEIR अनब्लॉक फॉर्म ↗",
+          ceirStatusBtn: "अनुरोध की स्थिति जांचें ↗",
+
+          emergencyHeading: "आपातकालीन नंबर और टेलीकॉम हेल्पलाइन",
+          emergencySubheading: "पुलिस, वित्तीय साइबर धोखाधड़ी और तत्काल सिम बंद कराने के लिए 24x7 निःशुल्क नंबर।",
+          nationalHelplinesTitle: "राष्ट्रीय आपातकालीन हेल्पलाइन",
+          helpline112Desc: "तत्काल शारीरिक खतरे, हमले या चोरी के लिए। बिना सिम या स्क्रीन लॉक के भी डायल होता है।",
+          call112Btn: "112 कॉल करें",
+          helpline1930Desc: "बैंक या UPI से अनधिकृत पैसे कटने पर गोल्डन ऑवर में तुरंत कॉल करें ताकि पैसे फ्रीज किए जा सकें।",
+          call1930Btn: "1930 कॉल करें",
+          upiNoticeTitle: "UPI सुरक्षा (GPay / PhonePe / Paytm):",
+          upiNoticeDesc: "सिम ब्लॉक होते ही UPI ऐप काम करना बंद कर देते हैं। अपने बैंक की 24x7 हेल्पलाइन पर कॉल करके नेट बैंकिंग और डेबिट कार्ड भी अस्थायी रूप से फ्रीज कराएं।",
+          telecomTitle: "भारतीय टेलीकॉम ऑपरेटर सिम ब्लॉकिंग",
+
+          toolsTitle: "सत्यापित आधिकारिक सेवाओं की सूची",
+          toolsSubtitle: "हमेशा केवल .gov.in या आधिकारिक कंपनी के पोर्टल का उपयोग करें। PhoneGone आपकी ओर से कोई फॉर्म जमा नहीं करता।",
+          toolAndroidTitle: "Android Find My Device",
+          toolAndroidDesc: "Google खाते से अपने Android फोन को लोकेट करें, रिंग बजाएं, लॉक करें या रिमोटली डेटा मिटाएं।",
+          toolAppleTitle: "Apple iCloud Find My",
+          toolAppleDesc: "अपने iPhone को लॉस्ट मोड पर डालें, स्क्रीन लॉक करें, संपर्क नंबर दिखाएं या डेटा वाइप करें।",
+          toolCeirTitle: "संचार साथी / CEIR",
+          toolCeirDesc: "दूरसंचार विभाग (DoT) का आधिकारिक पोर्टल जो खोए या चोरी हुए फोन के IMEI को भारत के सभी नेटवर्क पर ब्लैकलिस्ट करता है।",
+          toolCyberTitle: "राष्ट्रीय साइबर अपराध पोर्टल",
+          toolCyberDesc: "ऑनलाइन वित्तीय धोखाधड़ी या बैंक खाते में सेंधमारी की सीधी शिकायत दर्ज करें।",
+          toolPoliceTitle: "डिजिटल पुलिस नागरिक पोर्टल",
+          toolPoliceDesc: "राज्य पुलिस की ऑनलाइन e-FIR और मिसिंग मोबाइल रिपोर्ट दर्ज करने का राष्ट्रीय पोर्टल।",
+          toolGoogleSecTitle: "Google सुरक्षा जांच (Security Checkup)",
+          toolGoogleSecDesc: "खोए हुए फोन से अपने Google खाते को रिमोटली लॉग आउट करें और पासवर्ड बदलें।",
+          openOfficial: "आधिकारिक सेवा खोलें ↗",
+
+          boundariesTitle: "PhoneGone क्या करता है और क्या नहीं करता",
+          boundariesSubtitle: "ईमानदार और स्पष्ट सीमाएं ताकि आप हमेशा सुरक्षित रहें।",
+          whatWeDoTitle: "✅ PhoneGone क्या करता है",
+          whatWeDo1: "<span class='ico'>✓</span> घबराहट के समय आपको एक स्पष्ट, क्रमबद्ध चेकलिस्ट देता है ताकि कोई अहम कदम न छूटे।",
+          whatWeDo2: "<span class='ico'>✓</span> भारत सरकार (.gov.in) और आधिकारिक कंपनियों के सत्यापित पोर्टल से सीधे जोड़ता है।",
+          whatWeDo3: "<span class='ico'>✓</span> आपकी प्रगति को 100% केवल आपके अपने ब्राउज़र में सुरक्षित रखता है।",
+          whatWeDo4: "<span class='ico'>✓</span> पुलिस स्टेशन या सिम स्टोर ले जाने के लिए डाउनलोड और प्रिंट योग्य चेकलिस्ट देता है।",
+          whatWeDo5: "<span class='ico'>✓</span> पूरी तरह निःशुल्क, स्वयंसेवी, बिना किसी विज्ञापन या ट्रैकर के।",
+
+          whatWeCannotDoTitle: "❌ PhoneGone क्या नहीं कर सकता",
+          whatWeCannot1: "<span class='ico'>✕</span> आपके फोन की GPS लोकेशन ट्रैक या पता नहीं कर सकता।",
+          whatWeCannot2: "<span class='ico'>✕</span> टेलीकॉम नेटवर्क तक पहुंच नहीं रखता और न ही आपका सिम ब्लॉक कर सकता है।",
+          whatWeCannot3: "<span class='ico'>✕</span> आपकी ओर से पुलिस शिकायत या CEIR फॉर्म सबमिट नहीं कर सकता।",
+          whatWeCannot4: "<span class='ico'>✕</span> आपका IMEI, पासवर्ड, आधार या बैंक विवरण कभी नहीं मांगता और न ही सहेजता है।",
+          whatWeCannot5: "<span class='ico'>✕</span> यह कोई आपातकालीन सेवा नहीं है और इसका भारत सरकार, पुलिस, Google या Apple से कोई संबंध नहीं है।",
+
+          faqTitle: "अक्सर पूछे जाने वाले सवाल (FAQ)",
+          faqSubtitle: "भारत में खोए या चोरी हुए फोन से जुड़े महत्वपूर्ण सवालों के जवाब।",
+          faq1Q: "क्या PhoneGone मेरा फोन ट्रैक कर सकता है?",
+          faq1A: "नहीं। PhoneGone केवल एक मार्गदर्शन गाइड है। फोन केवल आधिकारिक लोकेटर (Google Find My Device या Apple Find My) अथवा पुलिस/टेलीकॉम टावर डेटा द्वारा ही ट्रैक किया जा सकता है। IMEI से फोन खोजने का दावा करने वाली फर्जी निजी वेबसाइटों को कभी पैसे न दें।",
+          faq2Q: "क्या CEIR वास्तव में फोन ब्लॉक करता है?",
+          faq2A: "हाँ। CEIR (सेंट्रल इक्विपमेंट आइडेंटिटी रजिस्टर) भारत सरकार के दूरसंचार विभाग की आधिकारिक व्यवस्था है। पुलिस रिपोर्ट के साथ ब्लॉक अनुरोध करने पर फोन का IMEI भारत के सभी नेटवर्क (Jio, Airtel, Vi, BSNL) पर ब्लॉक हो जाता है। चोर सिम बदल भी ले तो भी फोन पर कोई नेटवर्क नहीं चलेगा और पुलिस को अलर्ट जाएगा।",
+          faq3Q: "CEIR से पहले डुप्लीकेट सिम क्यों चाहिए, और OTP में देरी क्यों होती है?",
+          faq3A: "CEIR पोर्टल सत्यापन OTP उसी मोबाइल नंबर पर भेजता है जो खोए फोन में था। इसलिए ऑपरेटर से डुप्लीकेट सिम लेना जरूरी है। TRAI के सुरक्षा नियमों के मुताबिक, सिम स्वैप होने के 24 घंटे तक SMS सेवा बंद रहती है ताकि सिम फ्रॉड न हो सके। इसलिए डुप्लीकेट सिम चालू होने के 24 घंटे बाद ही CEIR का OTP मिल सकेगा।",
+          faq4Q: "क्या मुझे FIR करानी चाहिए या गुमशुदगी (Lost Report)?",
+          faq4A: "यदि फोन छीना गया या चोरी हुआ है, तो यह संज्ञेय अपराध (Cognizable Offense) है और पुलिस स्टेशन या ऑनलाइन पोर्टल पर FIR दर्ज करानी चाहिए। यदि फोन केवल कहीं छूट गया या खो गया है, तो राज्य पुलिस के नागरिक पोर्टल पर 'Lost Article Report' दर्ज की जा सकती है। CEIR दोनों स्वीकार करता है।",
+          faq5Q: "Google Pay, PhonePe और Paytm का दुरुपयोग कैसे रोकें?",
+          faq5A: "भारत में UPI आपके सिम कार्ड से बंधा होता है। पहला कदम: ऑपरेटर को कॉल करके सिम तुरंत ब्लॉक कराएं; सिम बंद होते ही UPI काम नहीं करेगा। दूसरा कदम: अपने बैंक की हेल्पलाइन पर कॉल करके नेट बैंकिंग और UPI अस्थायी रूप से फ्रीज कराएं। तीसरा कदम: पेमेंट ऐप हेल्पलाइन पर कॉल करके खाता ब्लॉक कराएं।",
+          faq6Q: "यदि मैं iPhone को रिमोटली मिटा (Erase) दूँ, तो क्या चोर उसे चला पाएगा?",
+          faq6A: "नहीं। जब तक 'Find My' चालू था, फोन मिटाने के बाद भी 'Activation Lock' सक्रिय रहता है। आपकी Apple ID के बिना फोन चालू नहीं हो सकता। ध्यान रहे: Erase करते समय 'Remove from Account' कभी न चुनें, अन्यथा एक्टिवेशन लॉक हट जाएगा।",
+          faq7Q: "फोन वापस मिल जाए तो उसे अनब्लॉक कैसे करें?",
+          faq7A: "CEIR के आधिकारिक अनब्लॉक फॉर्म (ceir.sancharsaathi.gov.in/Request/CeirUserUnblockRequestDirect.jsp) पर जाएं। ब्लॉक करते समय मिली 18 अंकों की Request ID, अपना मोबाइल नंबर, अनब्लॉक करने का कारण (जैसे 'स्वयं मिल गया' या 'पुलिस द्वारा बरामद') और OTP दर्ज करें। सत्यापन के बाद IMEI दोबारा सक्रिय हो जाएगा।",
+          faq8Q: "क्या PhoneGone मेरा कोई निजी डेटा सुरक्षित रखता है?",
+          faq8A: "नहीं। PhoneGone पूरी तरह क्लाइंट-साइड (आपके ब्राउज़र में) काम करता है। कोई सर्वर नहीं है जो आपका डेटा एकत्र करे। आपकी चेकलिस्ट प्रगति केवल आपके ब्राउज़र के localStorage में रहती है और 'प्रगति रीसेट करें' दबाते ही तुरंत साफ हो जाती है।",
+
+          privacyTitle: "100% क्लाइंट-साइड गोपनीयता की गारंटी",
+          privacyDesc: "PhoneGone आपकी कोई भी व्यक्तिगत जानकारी, IMEI, OTP या पुलिस शिकायत दस्तावेज कभी भी एकत्र या प्रसारित नहीं करता। चेकलिस्ट की सारी जानकारी केवल आपके ब्राउज़र में रहती है। कोई बाहरी ट्रैकर या विज्ञापन कोड लोड नहीं होता।",
+          footerMission: "भारत में फोन खोने या चोरी होने के बाद नागरिकों को शांत, सत्यापित और सुरक्षित कदम उठाने में मदद करने वाली एक स्वतंत्र, निःशुल्क सार्वजनिक गाइड।",
+          footerColGovt: "सरकारी सेवाएं",
+          footerColVendors: "डिवाइस लोकेटर",
+          footerDisclaimer: "स्वतंत्र सार्वजनिक गाइड · भारत सरकार, DoT, पुलिस, Google या Apple से कोई आधिकारिक संबंध नहीं।",
+
+          toastReset: "चेकलिस्ट प्रगति रीसेट कर दी गई है।",
+          toastDownloaded: "चेकलिस्ट सफलतापूर्वक डाउनलोड हो गई।",
+          confirmReset: "क्या आप चेकलिस्ट और दस्तावेज़ों की प्रगति रीसेट करना चाहते हैं?"
+        }
+      };
+
+      // Scenario Step Definitions
+      const STEPS = {
+        lost: [
+          {
+            id: 'lost-1',
+            tag: { en: 'Step 1 · Locate', hi: 'चरण 1 · खोजें' },
+            tagClass: 'gold-tag',
+            title: { en: 'Try Official Device Locators Immediately', hi: 'आधिकारिक डिवाइस लोकेटर तुरंत आज़माएँ' },
+            desc: {
+              en: 'Before the phone battery dies, sign into Google Find My Device (Android) or Apple iCloud Find (iPhone). Play sound to locate it if nearby (rings at full volume even on silent) or review its last known GPS location.',
+              hi: 'बैटरी खत्म होने से पहले Google Find My Device (Android) या Apple Find My (iPhone) में लॉग इन करें। पास में हो तो रिंग बजाएँ (साइलेंट पर भी तेज बजेगी) या अंतिम ज्ञात GPS लोकेशन देखें।'
+            },
+            links: [
+              { title: { en: 'Android Find My Device ↗', hi: 'Android डिवाइस खोजें ↗' }, url: URLS.googleFind },
+              { title: { en: 'Apple iCloud Find ↗', hi: 'Apple iPhone खोजें ↗' }, url: URLS.appleFind }
+            ]
+          },
+          {
+            id: 'lost-2',
+            tag: { en: 'Step 2 · Secure', hi: 'चरण 2 · सुरक्षित करें' },
+            tagClass: '',
+            title: { en: 'Remotely Lock Screen & Display Alternate Contact', hi: 'रिमोटली स्क्रीन लॉक करें और संपर्क नंबर छोड़ें' },
+            desc: {
+              en: 'Use the official locator to put the device into "Lost Mode" or "Secure Device". Display a polite message and an alternate phone number (of a family member/friend) so honest finders can call you without unlocking.',
+              hi: 'लोकेटर में फोन को "Lost Mode" या "Secure Device" पर डालें। स्क्रीन पर किसी परिवारजन का फोन नंबर और संदेश छोड़ें ताकि जिसे फोन मिले वह स्क्रीन अनलॉक किए बिना आपसे संपर्क कर सके।'
+            },
+            links: [
+              { title: { en: 'Google Account Security ↗', hi: 'Google सुरक्षा केंद्र ↗' }, url: URLS.googleSecurity },
+              { title: { en: 'Apple ID Devices ↗', hi: 'Apple ID डिवाइस ↗' }, url: URLS.appleId }
+            ]
+          },
+          {
+            id: 'lost-3',
+            tag: { en: 'Step 3 · Telecom', hi: 'चरण 3 · सिम सुरक्षा' },
+            tagClass: 'urgent-tag',
+            title: { en: 'Call Your Telecom Operator to Temporarily Suspend SIM', hi: 'ऑपरेटर को कॉल करके सिम अस्थायी रूप से बंद कराएं' },
+            desc: {
+              en: 'If the phone cannot be found quickly, call your mobile operator (Jio, Airtel, Vi, BSNL) from another phone to temporarily suspend the SIM. This stops anyone from intercepting incoming SMS OTPs or registering WhatsApp.',
+              hi: 'यदि फोन तुरंत न मिले, तो किसी अन्य फोन से अपने ऑपरेटर (Jio, Airtel, Vi, BSNL) को कॉल करके सिम अस्थायी रूप से बंद कराएं ताकि कोई आपके SMS OTP या WhatsApp का दुरुपयोग न कर सके।'
+            },
+            links: [
+              { title: { en: 'View Telecom Helplines ↓', hi: 'टेलीकॉम हेल्पलाइन नंबर देखें ↓' }, url: '#emergency' }
+            ]
+          },
+          {
+            id: 'lost-4',
+            tag: { en: 'Step 4 · Financial', hi: 'चरण 4 · बैंक व UPI' },
+            tagClass: 'urgent-tag',
+            title: { en: 'Safeguard Primary Email, UPI & Banking Access', hi: 'ईमेल, UPI और बैंक खातों को सुरक्षित करें' },
+            desc: {
+              en: 'Sign into your primary email (Gmail/Apple ID) from a trusted computer and sign out of all active sessions. If UPI apps (GPay, PhonePe, Paytm) did not have biometric protection, contact your bank to temporarily freeze UPI services.',
+              hi: 'किसी सुरक्षित कंप्यूटर से अपने ईमेल खाते (Gmail/Apple ID) में लॉग इन करें और खोए फोन से लॉग आउट करें। यदि UPI ऐप में बायोमेट्रिक लॉक नहीं था, तो बैंक को कॉल करके UPI सुविधा अस्थायी रूप से रोकें।'
+            },
+            links: [
+              { title: { en: 'Google Security Checkup ↗', hi: 'Google सुरक्षा जांच ↗' }, url: URLS.googleSecurity },
+              { title: { en: 'Cybercrime Helpline (1930) ↗', hi: 'साइबर हेल्पलाइन (1930) ↗' }, url: URLS.cyber1930 }
+            ]
+          },
+          {
+            id: 'lost-5',
+            tag: { en: 'Step 5 · Police', hi: 'चरण 5 · पुलिस रिपोर्ट' },
+            tagClass: '',
+            title: { en: 'File a Lost Article / Missing Mobile Report', hi: 'गुमशुदगी (Lost Article) रिपोर्ट दर्ज कराएं' },
+            desc: {
+              en: 'Visit your State Police citizen portal or local police station to file an online Lost Property Report. Keep the digitally generated acknowledgment slip safely; this is required if you later need to block the IMEI on CEIR or claim insurance.',
+              hi: 'अपनी राज्य पुलिस के नागरिक पोर्टल या थाने में ऑनलाइन "Lost Property / Missing Article" रिपोर्ट दर्ज कराएं। मिलने वाली रसीद सुरक्षित रखें; बाद में CEIR पर IMEI ब्लॉक करने या बीमा क्लेम के लिए यह अनिवार्य है।'
+            },
+            links: [
+              { title: { en: 'Digital Police Portal ↗', hi: 'डिजिटल पुलिस पोर्टल ↗' }, url: URLS.digitalPolice }
+            ]
+          },
+          {
+            id: 'lost-6',
+            tag: { en: 'Step 6 · CEIR', hi: 'चरण 6 · IMEI ब्लॉक' },
+            tagClass: '',
+            title: { en: 'If Not Recovered in 24-48 Hours: Block on CEIR', hi: 'यदि 24-48 घंटे में फोन न मिले: CEIR पर ब्लॉक कराएं' },
+            desc: {
+              en: 'Visit your telecom store to get a duplicate SIM. Remember the TRAI 24-hour SMS rule: wait 24 hours until SMS service is active, then visit the official CEIR portal to blacklist your phone IMEI across all Indian networks.',
+              hi: 'ऑपरेटर स्टोर से डुप्लीकेट सिम लें। TRAI के 24-घंटे नियम का ध्यान रखें: SMS चालू होने के 24 घंटे बाद आधिकारिक CEIR पोर्टल पर जाएं और फोन के IMEI को भारत के सभी नेटवर्क पर स्थायी रूप से ब्लॉक कराएं।'
+            },
+            links: [
+              { title: { en: 'CEIR Prerequisites Checklist ↓', hi: 'CEIR दस्तावेज़ तैयारी देखें ↓' }, url: '#ceir-docs' },
+              { title: { en: 'Official CEIR Blocking Form ↗', hi: 'आधिकारिक CEIR ब्लॉक फॉर्म ↗' }, url: URLS.ceirBlock }
+            ]
+          }
+        ],
+
+        stolen: [
+          {
+            id: 'stolen-1',
+            tag: { en: 'Priority 1 · Safety', hi: 'प्राथमिकता 1 · जीवन रक्षा' },
+            tagClass: 'urgent-tag',
+            title: { en: 'Ensure Personal Safety First — Do Not Pursue Thieves', hi: 'पहले अपनी सुरक्षा देखें — अपराधियों का पीछा न करें' },
+            desc: {
+              en: 'Your physical well-being is irreplaceable. Do NOT chase, fight, or confront snatchers. Move to a well-lit safe area. Note the exact time, location, suspect description, and getaway vehicle number. If injured or in danger, dial 112 immediately.',
+              hi: 'आपकी जान सबसे कीमती है। छीनने वालों का पीछा या उनसे हाथापाई बिल्कुल न करें। सुरक्षित स्थान पर जाएं। समय, सही स्थान, संदिग्धों का हुलिया और गाड़ी का नंबर याद रखें। खतरा होने पर तुरंत 112 डायल करें।'
+            },
+            links: [
+              { title: { en: 'Call 112 (Emergency Police) 📞', hi: '112 डायल करें (आपातकालीन पुलिस) 📞' }, url: URLS.erss112 }
+            ]
+          },
+          {
+            id: 'stolen-2',
+            tag: { en: 'Priority 2 · Banking', hi: 'प्राथमिकता 2 · वित्तीय रोक' },
+            tagClass: 'urgent-tag',
+            title: { en: 'Immediately Freeze UPI & Alert Your Bank', hi: 'तुरंत UPI रोकें और बैंक को सतर्क करें' },
+            desc: {
+              en: 'Thieves immediately attempt to siphon bank accounts through UPI. Call your bank 24x7 emergency helpline to temporarily freeze net banking, debit cards, and UPI transfers linked to the stolen mobile number.',
+              hi: 'अपराधी सबसे पहले UPI के जरिए बैंक खाते खाली करने का प्रयास करते हैं। अपने बैंक की 24x7 हेल्पलाइन पर तुरंत कॉल करें और चोरी हुए नंबर से जुड़े UPI, डेबिट कार्ड और नेट बैंकिंग को तत्काल फ्रीज कराएं।'
+            },
+            links: [
+              { title: { en: 'National Cyber Helpline (1930) 📞', hi: 'राष्ट्रीय साइबर हेल्पलाइन (1930) 📞' }, url: URLS.cyber1930 },
+              { title: { en: 'Cybercrime Portal ↗', hi: 'साइबर अपराध पोर्टल ↗' }, url: URLS.cybercrime }
+            ]
+          },
+          {
+            id: 'stolen-3',
+            tag: { en: 'Priority 3 · SIM', hi: 'प्राथमिकता 3 · सिम बंद' },
+            tagClass: 'urgent-tag',
+            title: { en: 'Deactivate / Block Stolen SIM Card Immediately', hi: 'चोरी हुई सिम को तुरंत डिएक्टिवेट / ब्लॉक कराएं' },
+            desc: {
+              en: 'Call your telecom operator (Jio, Airtel, Vi, BSNL) from another phone to report theft and deactivate the SIM card immediately. Once deactivated, the thief cannot receive SMS OTPs or hijack your messaging apps on another phone.',
+              hi: 'किसी अन्य फोन से अपने मोबाइल ऑपरेटर (Jio, Airtel, Vi, BSNL) को कॉल करके चोरी की सूचना दें और सिम तुरंत बंद कराएं। सिम बंद होते ही चोर दूसरे फोन में सिम डालकर भी आपके OTP प्राप्त नहीं कर सकेगा।'
+            },
+            links: [
+              { title: { en: 'View Telecom Helplines ↓', hi: 'टेलीकॉम हेल्पलाइन नंबर देखें ↓' }, url: '#emergency' }
+            ]
+          },
+          {
+            id: 'stolen-4',
+            tag: { en: 'Priority 4 · Lock', hi: 'प्राथमिकता 4 · रिमोट लॉक' },
+            tagClass: 'gold-tag',
+            title: { en: 'Remotely Lock or Erase via Official Device Locator', hi: 'आधिकारिक लोकेटर से रिमोट लॉक या डेटा वाइप करें' },
+            desc: {
+              en: 'From a trusted computer or smartphone, open Google Find My Device or Apple iCloud Find. For iPhone, enable "Lost Mode" (preserves Activation Lock; DO NOT remove the device from your Apple account!). For Android, secure or remotely erase device.',
+              hi: 'सुरक्षित कंप्यूटर से Google Find My Device या Apple Find My खोलें। iPhone के लिए "Lost Mode" चालू करें (इससे एक्टिवेशन लॉक बना रहता है; डिवाइस को Apple खाते से कभी न हटाएं!)। Android के लिए स्क्रीन लॉक करें या डेटा इरेज़ करें।'
+            },
+            links: [
+              { title: { en: 'Google Find My Device ↗', hi: 'Google Find My Device ↗' }, url: URLS.googleFind },
+              { title: { en: 'Apple iCloud Find ↗', hi: 'Apple iCloud Find ↗' }, url: URLS.appleFind }
+            ]
+          },
+          {
+            id: 'stolen-5',
+            tag: { en: 'Priority 5 · FIR', hi: 'प्राथमिकता 5 · पुलिस FIR' },
+            tagClass: '',
+            title: { en: 'File a Police FIR (Theft is a Cognizable Offense)', hi: 'पुलिस FIR दर्ज कराएं (चोरी संज्ञेय अपराध है)' },
+            desc: {
+              en: 'Visit the nearest police station or your State Police e-FIR portal. Provide IMEI numbers, handset model, and exact incident details. Insist on obtaining a stamped FIR copy or official e-FIR complaint slip (mandatory for CEIR).',
+              hi: 'नजदीकी पुलिस थाने जाएं या राज्य पुलिस के e-FIR पोर्टल पर चोरी/छीनने की रिपोर्ट दर्ज कराएं। फोन का IMEI नंबर, मॉडल और घटना का विवरण दें। मुहर लगी FIR कॉपी या रसीद अवश्य प्राप्त करें (CEIR के लिए अनिवार्य)।'
+            },
+            links: [
+              { title: { en: 'Digital Police Citizen Portal ↗', hi: 'डिजिटल पुलिस पोर्टल ↗' }, url: URLS.digitalPolice }
+            ]
+          },
+          {
+            id: 'stolen-6',
+            tag: { en: 'Priority 6 · Reissue SIM', hi: 'प्राथमिकता 6 · नई सिम' },
+            tagClass: '',
+            title: { en: 'Get Duplicate SIM & Wait 24 Hours for TRAI SMS Activation', hi: 'डुप्लीकेट सिम लें व TRAI के 24-घंटे SMS नियम का इंतजार करें' },
+            desc: {
+              en: 'Visit your telecom operator store with photo ID and police FIR copy to get a duplicate SIM card on the same number. TRAI security rules block SMS for 24 hours on newly swapped SIMs. You must wait 24 hours before the CEIR OTP will arrive.',
+              hi: 'पहचान पत्र और FIR कॉपी लेकर ऑपरेटर स्टोर जाएं और उसी नंबर की डुप्लीकेट सिम लें। TRAI नियमों के अनुसार नई सिम पर 24 घंटे तक SMS बंद रहता है। CEIR का OTP पाने के लिए आपको 24 घंटे इंतजार करना होगा।'
+            },
+            links: [
+              { title: { en: 'Sanchar Saathi Portal ↗', hi: 'संचार साथी पोर्टल ↗' }, url: URLS.sancharSaathi }
+            ]
+          },
+          {
+            id: 'stolen-7',
+            tag: { en: 'Priority 7 · CEIR Block', hi: 'प्राथमिकता 7 · CEIR ब्लॉक' },
+            tagClass: 'gold-tag',
+            title: { en: 'Block Device IMEI on Official CEIR Portal', hi: 'आधिकारिक CEIR पोर्टल पर फोन का IMEI ब्लॉक कराएं' },
+            desc: {
+              en: 'Once your duplicate SIM receives SMS, visit ceir.sancharsaathi.gov.in. Upload your police FIR copy, ID proof, enter IMEI numbers, and submit using the OTP sent to your duplicate SIM. The phone is now blacklisted across all Indian telecom networks.',
+              hi: 'डुप्लीकेट सिम पर SMS चालू होने के बाद ceir.sancharsaathi.gov.in पर जाएं। FIR कॉपी, पहचान पत्र, IMEI नंबर अपलोड करें और डुप्लीकेट सिम पर आए OTP से सबमिट करें। फोन भारत के सभी नेटवर्क पर ब्लैकलिस्ट हो जाएगा।'
+            },
+            links: [
+              { title: { en: 'Official CEIR Blocking Form ↗', hi: 'आधिकारिक CEIR ब्लॉक फॉर्म ↗' }, url: URLS.ceirBlock }
+            ]
+          },
+          {
+            id: 'stolen-8',
+            tag: { en: 'Priority 8 · Fraud', hi: 'प्राथमिकता 8 · वित्तीय साइबर फ्रॉड' },
+            tagClass: '',
+            title: { en: 'If Money Was Deducted: Report to 1930 / Cybercrime Portal', hi: 'यदि पैसे कटे हैं: 1930 या साइबर पोर्टल पर शिकायत करें' },
+            desc: {
+              en: 'If any unauthorized financial transactions occurred, call 1930 (National Cyber Crime Helpline) immediately or lodge a complaint on cybercrime.gov.in. Immediate reporting within the Golden Hour allows authorities to freeze money before cash-out.',
+              hi: 'यदि आपके बैंक खाते या वॉलेट से कोई अनधिकृत लेन-देन हुआ है, तो तुरंत 1930 पर कॉल करें या cybercrime.gov.in पर रिपोर्ट करें। तुरंत शिकायत करने से पुलिस व बैंक पैसे को जालसाज के खाते में फ्रीज कर सकते हैं।'
+            },
+            links: [
+              { title: { en: 'Call 1930 (Cyber Fraud) 📞', hi: '1930 डायल करें (साइबर फ्रॉड) 📞' }, url: URLS.cyber1930 },
+              { title: { en: 'Cybercrime Portal ↗', hi: 'साइबर अपराध पोर्टल ↗' }, url: URLS.cybercrime }
+            ]
+          }
+        ],
+
+        found: [
+          {
+            id: 'found-1',
+            tag: { en: 'Step 1 · Verification', hi: 'चरण 1 · डिवाइस जांच' },
+            tagClass: '',
+            title: { en: 'Verify Device Identity & Physical Integrity', hi: 'डिवाइस पहचान व हार्डवेयर की जांच करें' },
+            desc: {
+              en: 'Confirm the phone is indeed yours. Inspect the hardware, SIM tray, and screen for physical tampering. Power on in a secure location and check installed applications for unknown profiles or software.',
+              hi: 'पुष्टि करें कि यह आपका ही फोन है। सिम ट्रे, स्क्रीन और बॉडी की जांच करें। सुरक्षित जगह पर फोन चालू करें और देखें कि कोई अज्ञात ऐप या असामान्य सेटिंग तो नहीं जोड़ी गई है।'
+            },
+            links: [
+              { title: { en: 'Google Account Devices ↗', hi: 'Google डिवाइस सूची ↗' }, url: URLS.googleSecurity }
+            ]
+          },
+          {
+            id: 'found-2',
+            tag: { en: 'Step 2 · CEIR Unblock', hi: 'चरण 2 · CEIR अनब्लॉक' },
+            tagClass: 'gold-tag',
+            title: { en: 'Submit Official CEIR Unblock Request', hi: 'आधिकारिक CEIR पोर्टल पर अनब्लॉक अनुरोध दें' },
+            desc: {
+              en: 'If you had previously blocked the phone on CEIR, visit the official CEIR Unblock page. Provide the 18-digit Request ID generated during blocking, your registered mobile number, the reason for unblocking (e.g. "Found by self" or "Recovered by Police"), and duplicate SIM OTP.',
+              hi: 'यदि आपने पहले CEIR पर फोन ब्लॉक किया था, तो आधिकारिक CEIR अनब्लॉक पेज पर जाएं। ब्लॉक करते समय मिली 18 अंकों की Request ID, अपना मोबाइल नंबर, अनब्लॉक करने का कारण (जैसे "स्वयं मिल गया" या "पुलिस द्वारा बरामद") और OTP दर्ज करें।'
+            },
+            links: [
+              { title: { en: 'Official CEIR Unblock Request Form ↗', hi: 'आधिकारिक CEIR अनब्लॉक फॉर्म ↗' }, url: URLS.ceirUnblock },
+              { title: { en: 'Check Unblock Status ↗', hi: 'अनब्लॉक स्थिति जांचें ↗' }, url: URLS.ceirStatus }
+            ]
+          },
+          {
+            id: 'found-3',
+            tag: { en: 'Step 3 · Police Notice', hi: 'चरण 3 · पुलिस सूचना' },
+            tagClass: '',
+            title: { en: 'Inform Police Station & Close Complaint', hi: 'पुलिस थाने को सूचित करें और शिकायत बंद कराएं' },
+            desc: {
+              en: 'If you filed an FIR or Lost Article Report, inform the investigating officer or police station that the device has been recovered. Obtain a formal closure receipt to ensure police records reflect recovery and avoid future verification issues.',
+              hi: 'यदि आपने FIR या गुमशुदगी रिपोर्ट दर्ज कराई थी, तो संबंधित थाने या जांच अधिकारी को फोन मिलने की सूचना दें। शिकायत निस्तारण (Closure) की रसीद लें ताकि भविष्य में किसी चेकिंग में परेशानी न हो।'
+            },
+            links: [
+              { title: { en: 'Digital Police Portal ↗', hi: 'डिजिटल पुलिस पोर्टल ↗' }, url: URLS.digitalPolice }
+            ]
+          },
+          {
+            id: 'found-4',
+            tag: { en: 'Step 4 · Telecom', hi: 'चरण 4 · सिम सेवा बहाली' },
+            tagClass: '',
+            title: { en: 'Restore Telecom Network & SIM Services', hi: 'टेलीकॉम नेटवर्क और सिम सेवाएं बहाल करें' },
+            desc: {
+              en: 'If your SIM was suspended or you are switching back from a temporary connection, ensure your telecom operator has restored full calling, SMS, and 4G/5G data services on your primary SIM.',
+              hi: 'यदि आपकी सिम निलंबित थी या आप किसी अस्थायी सिम पर थे, तो ऑपरेटर स्टोर या कस्टमर केयर से संपर्क करके अपने नंबर पर सामान्य कॉलिंग, SMS और इंटरनेट सेवाएं पूरी तरह सक्रिय कराएं।'
+            },
+            links: [
+              { title: { en: 'View Telecom Helplines ↓', hi: 'टेलीकॉम हेल्पलाइन नंबर देखें ↓' }, url: '#emergency' }
+            ]
+          },
+          {
+            id: 'found-5',
+            tag: { en: 'Step 5 · Account Audit', hi: 'चरण 5 · सुरक्षा ऑडिट' },
+            tagClass: 'urgent-tag',
+            title: { en: 'Review Signed-in Sessions & Change Passwords', hi: 'सक्रिय सेशन जांचें और पासवर्ड बदलें' },
+            desc: {
+              en: 'Open Google Security Checkup or Apple Account settings. Review all signed-in devices and revoke sessions you do not recognize. Change your master account passwords, screen lock PIN/biometrics, and re-enable UPI payment apps.',
+              hi: 'Google Security Checkup या Apple ID सेटिंग खोलें। सभी सक्रिय डिवाइसों की समीक्षा करें और अनजान सेशन लॉग आउट करें। अपने मुख्य ईमेल का पासवर्ड, स्क्रीन लॉक पिन बदलें और UPI ऐप दोबारा सक्रिय करें।'
+            },
+            links: [
+              { title: { en: 'Google Security Checkup ↗', hi: 'Google सुरक्षा जांच ↗' }, url: URLS.googleSecurity },
+              { title: { en: 'Apple ID Settings ↗', hi: 'Apple ID सेटिंग ↗' }, url: URLS.appleId }
+            ]
+          },
+          {
+            id: 'found-6',
+            tag: { en: 'Step 6 · Records', hi: 'चरण 6 · रिकॉर्ड सुरक्षा' },
+            tagClass: '',
+            title: { en: 'Safely Archive Case Records & Device Receipts', hi: 'केस रिकॉर्ड और फोन रसीदें सुरक्षित सहेजें' },
+            desc: {
+              en: 'Store digital copies of your purchase invoice, police closure letter, and CEIR unblocking acknowledgment in a secure digital vault or cloud backup for future ownership proof and resale.',
+              hi: 'फोन का मूल बिल, पुलिस केस क्लोजर रसीद और CEIR अनब्लॉकिंग पावती की डिजिटल कॉपी किसी सुरक्षित स्थान या क्लाउड में रखें ताकि भविष्य में कभी दोबारा स्वामित्व सिद्ध करने में काम आ सके।'
+            },
+            links: [
+              { title: { en: 'Sanchar Saathi Portal ↗', hi: 'संचार साथी पोर्टल ↗' }, url: URLS.sancharSaathi }
+            ]
+          }
+        ]
+      };
+
+      // Toast Notification Helper
+      let toastTimer = null;
+      function showToast(message) {
+        const toastEl = document.getElementById('toast');
+        const toastMsg = document.getElementById('toastMsg');
+        if (!toastEl || !toastMsg) return;
+        
+        toastMsg.textContent = message;
+        toastEl.classList.add('visible');
+        
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.remove('visible');
+        }, 2800);
+      }
+
+      // Update All Static Translations
+      function updateTranslations() {
+        const dict = i18n[state.lang];
+        document.documentElement.lang = state.lang;
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (dict[key] !== undefined) {
+            el.innerHTML = dict[key];
+          }
+        });
+
+        // Update select value
+        const langSelect = document.getElementById('langSelect');
+        if (langSelect && langSelect.value !== state.lang) {
+          langSelect.value = state.lang;
+        }
+
+        // Save language preference
+        try {
+          localStorage.setItem('phonegone_lang', state.lang);
+        } catch (e) {
+          // localStorage disabled or private mode
+        }
+      }
+
+      // Render Dynamic Steps
+      function renderSteps() {
+        const container = document.getElementById('steps-panel');
+        if (!container) return;
+        
+        const steps = STEPS[state.scenario] || [];
+        container.innerHTML = '';
+
+        steps.forEach((step, idx) => {
+          const isChecked = !!state.stepsChecked[`${state.scenario}-${idx}`];
+          const article = document.createElement('article');
+          article.className = `step-card ${isChecked ? 'completed' : ''}`;
+          article.id = `step-card-${state.scenario}-${idx}`;
+
+          // Checkbox
+          const cb = document.createElement('input');
+          cb.type = 'checkbox';
+          cb.className = 'step-checkbox';
+          cb.id = `cb-${state.scenario}-${idx}`;
+          cb.checked = isChecked;
+          cb.setAttribute('aria-label', step.title[state.lang]);
+          
+          cb.addEventListener('change', () => {
+            state.stepsChecked[`${state.scenario}-${idx}`] = cb.checked;
+            article.classList.toggle('completed', cb.checked);
+            updateProgress();
+            saveState();
+          });
+
+          // Content body
+          const content = document.createElement('div');
+          content.className = 'step-content';
+
+          // Header with tag & title
+          const header = document.createElement('div');
+          header.className = 'step-header';
+
+          const tag = document.createElement('span');
+          tag.className = `step-tag ${step.tagClass}`;
+          tag.textContent = step.tag[state.lang];
+
+          const title = document.createElement('h3');
+          title.className = 'step-title';
+          title.textContent = step.title[state.lang];
+
+          header.appendChild(tag);
+          header.appendChild(title);
+
+          // Description
+          const desc = document.createElement('p');
+          desc.className = 'step-desc';
+          desc.textContent = step.desc[state.lang];
+
+          // Links container
+          const linksBox = document.createElement('div');
+          linksBox.className = 'step-links';
+
+          if (step.links && step.links.length > 0) {
+            step.links.forEach(linkItem => {
+              const a = document.createElement('a');
+              a.className = 'step-link';
+              a.href = linkItem.url;
+              if (linkItem.url.startsWith('http')) {
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+              }
+              a.textContent = linkItem.title[state.lang];
+              linksBox.appendChild(a);
+            });
+          }
+
+          content.appendChild(header);
+          content.appendChild(desc);
+          if (step.links && step.links.length > 0) {
+            content.appendChild(linksBox);
+          }
+
+          article.appendChild(cb);
+          article.appendChild(content);
+          container.appendChild(article);
+        });
+
+        updateProgress();
+      }
+
+      // Update Progress Bar & Counter
+      function updateProgress() {
+        const steps = STEPS[state.scenario] || [];
+        const total = steps.length;
+        let completed = 0;
+
+        for (let i = 0; i < total; i++) {
+          if (state.stepsChecked[`${state.scenario}-${i}`]) {
+            completed++;
+          }
+        }
+
+        const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
+        const progressCount = document.getElementById('progressCount');
+        const progressBar = document.getElementById('progressBar');
+        const progressTrack = document.getElementById('progressTrack');
+
+        if (progressCount) {
+          const dict = i18n[state.lang];
+          const text = dict.progressFormat
+            .replace('{completed}', completed)
+            .replace('{total}', total)
+            .replace('{pct}', pct);
+          progressCount.textContent = text;
+        }
+
+        if (progressBar) {
+          progressBar.style.width = pct + '%';
+        }
+
+        if (progressTrack) {
+          progressTrack.setAttribute('aria-valuenow', pct);
+        }
+      }
+
+      // Select Scenario Tab
+      function setScenario(sc) {
+        if (!STEPS[sc]) return;
+        state.scenario = sc;
+
+        document.querySelectorAll('.scenario-tab').forEach(tab => {
+          const isCurrent = tab.getAttribute('data-case') === sc;
+          tab.classList.toggle('active', isCurrent);
+          tab.setAttribute('aria-selected', isCurrent ? 'true' : 'false');
+        });
+
+        renderSteps();
+        saveState();
+      }
+
+      // Set Language
+      function setLanguage(lang) {
+        if (!i18n[lang]) return;
+        state.lang = lang;
+        updateTranslations();
+        renderSteps();
+      }
+
+      // Save State to LocalStorage
+      function saveState() {
+        try {
+          localStorage.setItem('phonegone_scenario', state.scenario);
+          localStorage.setItem('phonegone_steps', JSON.stringify(state.stepsChecked));
+          localStorage.setItem('phonegone_docs', JSON.stringify(state.docsChecked));
+        } catch (e) {
+          // Ignore if localStorage unavailable
+        }
+      }
+
+      // Load State from LocalStorage
+      function loadState() {
+        try {
+          // Check URL query param first (?lang=hi or ?lang=en)
+          const urlParams = new URLSearchParams(window.location.search);
+          const langParam = urlParams.get('lang');
+          if (langParam === 'hi' || langParam === 'en') {
+            state.lang = langParam;
+          } else {
+            const savedLang = localStorage.getItem('phonegone_lang');
+            if (savedLang === 'hi' || savedLang === 'en') {
+              state.lang = savedLang;
+            }
+          }
+
+          const savedSc = localStorage.getItem('phonegone_scenario');
+          if (savedSc && STEPS[savedSc]) {
+            state.scenario = savedSc;
+          }
+
+          const savedSteps = localStorage.getItem('phonegone_steps');
+          if (savedSteps) {
+            state.stepsChecked = JSON.parse(savedSteps);
+          }
+
+          const savedDocs = localStorage.getItem('phonegone_docs');
+          if (savedDocs) {
+            state.docsChecked = JSON.parse(savedDocs);
+          }
+        } catch (e) {
+          // Fallback to default
+        }
+      }
+
+      // Download Formatted Checklist (.txt)
+      function downloadChecklist() {
+        const dict = i18n[state.lang];
+        const scenarioTitles = {
+          lost: dict.tabLostTitle,
+          stolen: dict.tabStolenTitle,
+          found: dict.tabFoundTitle
+        };
+
+        const steps = STEPS[state.scenario] || [];
+        const dateStr = new Date().toLocaleString();
+
+        let lines = [];
+        lines.push("===============================================================");
+        lines.push(" PHONEGONE — LOST PHONE RESCUE CHECKLIST (INDIA)");
+        lines.push(" Independent Citizen Action Plan · Official Government Services");
+        lines.push("===============================================================");
+        lines.push("");
+        lines.push(`Generated: ${dateStr}`);
+        lines.push(`Scenario:  ${scenarioTitles[state.scenario]} (${state.scenario.toUpperCase()})`);
+        lines.push(`Language:  ${state.lang === 'hi' ? 'Hindi (हिन्दी)' : 'English'}`);
+        lines.push("");
+        lines.push("---------------------------------------------------------------");
+        lines.push(" ACTION STEPS");
+        lines.push("---------------------------------------------------------------");
+
+        steps.forEach((s, i) => {
+          const checked = !!state.stepsChecked[`${state.scenario}-${i}`];
+          const mark = checked ? "[COMPLETED]" : "[PENDING]  ";
+          lines.push("");
+          lines.push(`${mark} ${s.tag[state.lang]}: ${s.title[state.lang]}`);
+          lines.push(`            ${s.desc[state.lang]}`);
+          if (s.links && s.links.length > 0) {
+            s.links.forEach(l => {
+              lines.push(`            -> ${l.title[state.lang]}: ${l.url}`);
+            });
+          }
+        });
+
+        lines.push("");
+        lines.push("---------------------------------------------------------------");
+        lines.push(" CEIR DOCUMENT READINESS (GOVERNMENT IMEI BLOCKING)");
+        lines.push("---------------------------------------------------------------");
+        const docNames = [
+          { key: 'fir', name: dict.docFir, mandatory: true },
+          { key: 'sim', name: dict.docSim, mandatory: true },
+          { key: 'id', name: dict.docId, mandatory: true },
+          { key: 'imei', name: dict.docImei, mandatory: true },
+          { key: 'bill', name: dict.docBill, mandatory: false }
+        ];
+
+        docNames.forEach(d => {
+          const ready = !!state.docsChecked[d.key];
+          const status = ready ? "[READY]  " : "[MISSING]";
+          const req = d.mandatory ? "(Mandatory)" : "(Optional) ";
+          lines.push(`${status} ${req} ${d.name}`);
+        });
+
+        lines.push("");
+        lines.push("---------------------------------------------------------------");
+        lines.push(" EMERGENCY HELPLINES IN INDIA");
+        lines.push("---------------------------------------------------------------");
+        lines.push("• 112  — National Emergency Response (Police / Fire / Ambulance)");
+        lines.push("• 1930 — National Cyber Crime Helpline (Financial Cyber Fraud / I4C)");
+        lines.push("• Reliance Jio SIM Block: 199 or 1800-889-9999");
+        lines.push("• Bharti Airtel SIM Block: 121 or 1800-103-6065");
+        lines.push("• Vodafone Idea SIM Block: 199 or 1800-123-4567");
+        lines.push("• BSNL SIM Block: 1503 or 1800-180-1503");
+        lines.push("");
+        lines.push("---------------------------------------------------------------");
+        lines.push(" VERIFIED OFFICIAL WEBSITES");
+        lines.push("---------------------------------------------------------------");
+        lines.push("• CEIR Lost/Stolen IMEI Block: " + URLS.ceirBlock);
+        lines.push("• CEIR Recovered IMEI Unblock: " + URLS.ceirUnblock);
+        lines.push("• Sanchar Saathi Portal:      " + URLS.sancharSaathi);
+        lines.push("• National Cybercrime Portal: " + URLS.cybercrime);
+        lines.push("• Google Find My Device:      " + URLS.googleFind);
+        lines.push("• Apple iCloud Find:          " + URLS.appleFind);
+        lines.push("");
+        lines.push("---------------------------------------------------------------");
+        lines.push(" IMPORTANT SAFETY & PRIVACY NOTICE");
+        lines.push("---------------------------------------------------------------");
+        lines.push("PhoneGone is an independent volunteer guide, not an official government");
+        lines.push("service. Never enter your IMEI, OTPs, or passwords on unofficial websites.");
+        lines.push("Only submit sensitive documents to official .gov.in domains.");
+        lines.push("===============================================================");
+
+        const blob = new Blob([lines.join("\n")], { type: "text/plain;charset=utf-8" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = `phonegone-checklist-${state.scenario}-${new Date().toISOString().slice(0,10)}.txt`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(a.href);
+
+        showToast(dict.toastDownloaded);
+      }
+
+      // Reset All Progress
+      function resetProgress() {
+        const dict = i18n[state.lang];
+        if (!confirm(dict.confirmReset)) return;
+
+        state.stepsChecked = {};
+        state.docsChecked = {};
+
+        // Uncheck all document checkboxes
+        document.querySelectorAll('#ceirDocList input').forEach(input => {
+          input.checked = false;
+        });
+
+        renderSteps();
+        saveState();
+        showToast(dict.toastReset);
+      }
+
+      // Wire Up Document Readiness Checkboxes
+      function initDocCheckboxes() {
+        const docKeys = ['fir', 'sim', 'id', 'imei', 'bill'];
+        docKeys.forEach(k => {
+          const el = document.getElementById(`doc-${k}`);
+          if (el) {
+            el.checked = !!state.docsChecked[k];
+            el.addEventListener('change', () => {
+              state.docsChecked[k] = el.checked;
+              saveState();
+            });
+          }
+        });
+      }
+
+      // Keyboard Arrow Navigation for Tabs
+      function initTabKeyboardNav() {
+        const tabs = Array.from(document.querySelectorAll('.scenario-tab'));
+        tabs.forEach((tab, index) => {
+          tab.addEventListener('keydown', (e) => {
+            let nextIndex = index;
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+              nextIndex = (index + 1) % tabs.length;
+              e.preventDefault();
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+              nextIndex = (index - 1 + tabs.length) % tabs.length;
+              e.preventDefault();
+            }
+            if (nextIndex !== index) {
+              tabs[nextIndex].focus();
+              setScenario(tabs[nextIndex].getAttribute('data-case'));
+            }
+          });
+        });
+      }
+
+      // Initialize Everything on DOM Ready
+      document.addEventListener('DOMContentLoaded', () => {
+        loadState();
+        updateTranslations();
+        initDocCheckboxes();
+        initTabKeyboardNav();
+
+        // Scenario tab clicks
+        document.querySelectorAll('.scenario-tab').forEach(b => {
+          b.addEventListener('click', () => {
+            setScenario(b.getAttribute('data-case'));
+          });
+        });
+
+        // Set initial scenario tab active state
+        document.querySelectorAll('.scenario-tab').forEach(tab => {
+          const isCurrent = tab.getAttribute('data-case') === state.scenario;
+          tab.classList.toggle('active', isCurrent);
+          tab.setAttribute('aria-selected', isCurrent ? 'true' : 'false');
+        });
+
+        // Language select change
+        const langSelect = document.getElementById('langSelect');
+        if (langSelect) {
+          langSelect.value = state.lang;
+          langSelect.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+          });
+        }
+
+        // Toolbar buttons
+        const downloadBtn = document.getElementById('downloadChecklistBtn');
+        if (downloadBtn) {
+          downloadBtn.addEventListener('click', downloadChecklist);
+        }
+
+        const printBtn = document.getElementById('printChecklistBtn');
+        if (printBtn) {
+          printBtn.addEventListener('click', () => window.print());
+        }
+
+        const resetBtn = document.getElementById('resetChecklistBtn');
+        if (resetBtn) {
+          resetBtn.addEventListener('click', resetProgress);
+        }
+
+        // Initial steps render
+        renderSteps();
+      });
+
+    })();
+  </script>
+</body>
+</html>

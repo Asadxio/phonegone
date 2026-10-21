@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phonegone.myoss.in/sitemap.xml
