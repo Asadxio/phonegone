@@ -797,6 +797,124 @@
       align-items: center;
     }
 
+    /* Emergency Bank Freezing Directory */
+    .bank-freeze-section {
+      margin-top: 3.5rem;
+    }
+    .bank-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+    .bank-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .bank-card:hover {
+      border-color: var(--em-light);
+      transform: translateY(-2px);
+    }
+    .bank-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+    .bank-name {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+    }
+    .bank-badge {
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--radius-sm);
+      background: #eff6ff;
+      color: #1e40af;
+      text-transform: uppercase;
+    }
+    body.theme-dark .bank-badge {
+      background: #172554;
+      color: #93c5fd;
+    }
+    .bank-numbers {
+      margin: 0.75rem 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .bank-tel-link {
+      color: var(--em-main);
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    body.theme-dark .bank-tel-link {
+      color: var(--gold-bright);
+    }
+    .bank-note {
+      font-size: 0.78rem;
+      color: var(--ink-tertiary);
+    }
+
+    /* Account Hijack Defense & Remote Logout */
+    .account-freeze-section {
+      margin-top: 3.5rem;
+    }
+    .account-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .account-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .account-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.85rem;
+    }
+    .account-card-header h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+    }
+    .account-card p {
+      font-size: 0.88rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+      margin-bottom: 1rem;
+    }
+    .account-code-box {
+      background: var(--bg-page);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: var(--ink-primary);
+      margin-bottom: 1rem;
+      word-break: break-all;
+    }
+
     /* CEIR Document Assistant */
     .ceir-section {
       margin-top: 3.5rem;
@@ -941,6 +1059,54 @@
       margin-bottom: 0.35rem;
     }
 
+    /* CEIR Visual Form Walkthrough */
+    .ceir-walkthrough-section {
+      margin-top: 3.5rem;
+    }
+    .ceir-walkthrough-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .walkthrough-step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .walkthrough-step-num {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--em-main);
+      background: var(--em-subtle);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+    body.theme-dark .walkthrough-step-num {
+      background: #102d24;
+      color: #a7f3d0;
+    }
+    .walkthrough-step-card h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+      margin-bottom: 0.5rem;
+    }
+    .walkthrough-step-card ul {
+      padding-left: 1.15rem;
+      font-size: 0.88rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+    }
+    .walkthrough-step-card li {
+      margin-bottom: 0.35rem;
+    }
+
     /* State Police Online Portals Directory */
     .state-police-section {
       margin-top: 3.5rem;
@@ -1071,6 +1237,52 @@
       display: flex;
       gap: 0.75rem;
       flex-wrap: wrap;
+    }
+
+    /* Civic Share Banner */
+    .civic-share-section {
+      margin-top: 3.5rem;
+    }
+    .civic-share-card {
+      background: linear-gradient(135deg, var(--em-deep) 0%, var(--em-main) 100%);
+      color: #ffffff;
+      border: 1px solid var(--gold-main);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+    .civic-share-card h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+    .civic-share-card p {
+      color: #d1e5dd;
+      font-size: 0.95rem;
+      max-width: 650px;
+      margin: 0 auto 1.5rem;
+    }
+    .civic-share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .share-btn-wa {
+      background: #25d366;
+      color: #ffffff;
+    }
+    .share-btn-wa:hover {
+      background: #1ebc59;
+    }
+    .share-btn-tg {
+      background: #229ed9;
+      color: #ffffff;
+    }
+    .share-btn-tg:hover {
+      background: #1c88bd;
     }
 
     /* Emergency Helplines & Telecom Grid */
@@ -1519,7 +1731,7 @@
         color: #000000 !important;
         font-size: 11pt;
       }
-      .tricolor-ribbon, .top-bar, .nav-controls, .hero-actions, .checklist-toolbar, .toast, .skip-link, .mobile-sos-dock, .theme-toggle-btn {
+      .tricolor-ribbon, .top-bar, .nav-controls, .hero-actions, .checklist-toolbar, .toast, .skip-link, .mobile-sos-dock, .theme-toggle-btn, .civic-share-section {
         display: none !important;
       }
       header {
@@ -1575,6 +1787,15 @@
       .tools-grid {
         grid-template-columns: 1fr 1fr;
       }
+      .bank-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .account-grid {
+        grid-template-columns: 1fr;
+      }
+      .ceir-walkthrough-grid {
+        grid-template-columns: 1fr;
+      }
       .footer-inner {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -1611,6 +1832,9 @@
         grid-template-columns: 1fr;
       }
       .tools-grid {
+        grid-template-columns: 1fr;
+      }
+      .bank-grid {
         grid-template-columns: 1fr;
       }
       .boundaries-grid {
@@ -1848,6 +2072,237 @@
       </div>
     </section>
 
+    <!-- Emergency Bank Freezing Directory -->
+    <section class="bank-freeze-section" id="bank-freeze" aria-labelledby="bankFreezeHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="bankFreezeHeading" data-i18n="bankFreezeTitle">Emergency Bank &amp; UPI Freezing Directory</h2>
+          <p data-i18n="bankFreezeSubtitle">Direct 24x7 emergency helplines to block Net Banking, Debit Cards, and UPI handles immediately.</p>
+        </div>
+      </div>
+
+      <div class="bank-grid" id="bankGrid">
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">State Bank of India (SBI)</div>
+            <span class="bank-badge">Public Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:18001234" class="bank-tel-link">1800 1234 📞</a>
+            <a href="tel:18002100" class="bank-tel-link">1800 2100 📞</a>
+          </div>
+          <div class="bank-note">Toll-free 24x7 Account &amp; Card Freezing</div>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">HDFC Bank</div>
+            <span class="bank-badge">Private Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:18001600" class="bank-tel-link">1800 1600 📞</a>
+            <a href="tel:18002600" class="bank-tel-link">1800 2600 📞</a>
+          </div>
+          <div class="bank-note">24x7 Customer Emergency Helpline</div>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">ICICI Bank</div>
+            <span class="bank-badge">Private Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:18001080" class="bank-tel-link">1800 1080 📞</a>
+          </div>
+          <div class="bank-note">Emergency Card &amp; Net Banking Suspension</div>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">Axis Bank</div>
+            <span class="bank-badge">Private Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:18604195555" class="bank-tel-link">1860 419 5555 📞</a>
+            <a href="tel:18605005555" class="bank-tel-link">1860 500 5555 📞</a>
+          </div>
+          <div class="bank-note">24x7 Urgent Support &amp; Fraud Assistance</div>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">Punjab National Bank (PNB)</div>
+            <span class="bank-badge">Public Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:18001802222" class="bank-tel-link">1800 180 2222 📞</a>
+            <a href="tel:18001032222" class="bank-tel-link">1800 103 2222 📞</a>
+          </div>
+          <div class="bank-note">National 24x7 Toll-Free Call Centre</div>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">Bank of Baroda</div>
+            <span class="bank-badge">Public Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:18005700" class="bank-tel-link">1800 5700 📞</a>
+          </div>
+          <div class="bank-note">24x7 Contact Centre Card Block</div>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">Kotak Mahindra Bank</div>
+            <span class="bank-badge">Private Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:18602662666" class="bank-tel-link">1860 266 2666 📞</a>
+          </div>
+          <div class="bank-note">Immediate Fraud Freeze &amp; UPI Invalidation</div>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">Canara Bank</div>
+            <span class="bank-badge">Public Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:18004250018" class="bank-tel-link">1800 425 0018 📞</a>
+          </div>
+          <div class="bank-note">24x7 National Toll-Free Helpline</div>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <div class="bank-name">Union Bank of India</div>
+            <span class="bank-badge">Public Sector</span>
+          </div>
+          <div class="bank-numbers">
+            <a href="tel:1800222244" class="bank-tel-link">1800 22 2244 📞</a>
+            <a href="tel:18002082244" class="bank-tel-link">1800 208 2244 📞</a>
+          </div>
+          <div class="bank-note">Toll-Free All India Customer Support</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Account Hijack Defense & Remote Logout -->
+    <section class="account-freeze-section" id="account-freeze" aria-labelledby="accountFreezeHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="accountFreezeHeading" data-i18n="accountFreezeTitle">Account Hijack Defense &amp; Remote Logout</h2>
+          <p data-i18n="accountFreezeSubtitle">Prevent impersonation, malicious messages, and unauthorized access to your private conversations.</p>
+        </div>
+      </div>
+
+      <div class="account-grid">
+        <!-- WhatsApp Protocol -->
+        <div class="account-card">
+          <div class="account-card-header">
+            <span style="font-size:1.5rem" aria-hidden="true">💬</span>
+            <h3 data-i18n="waDeactTitle">WhatsApp Official Deactivation</h3>
+          </div>
+          <p data-i18n="waDeactDesc">Send an email directly to official WhatsApp Support to immediately deactivate your account so thieves cannot message your contacts for money.</p>
+          <div class="account-code-box">
+            <strong>To:</strong> support@whatsapp.com<br>
+            <strong>Subject:</strong> Lost/Stolen: Please deactivate my account<br>
+            <strong>Body:</strong> Lost/Stolen: Please deactivate my account associated with phone number +91 [Your Number]
+          </div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <a href="mailto:support@whatsapp.com?subject=Lost%2FStolen%3A%20Please%20deactivate%20my%20account&amp;body=Lost%2FStolen%3A%20Please%20deactivate%20my%20account%20associated%20with%20phone%20number%20%2B91" class="btn btn-emerald" id="openWaMailLink" data-i18n="openWaMailBtn">📧 Open Email Client</a>
+            <button type="button" class="btn btn-secondary" id="copyWaEmailBtn" data-i18n="copyWaEmailBtn">📋 Copy Template</button>
+          </div>
+        </div>
+
+        <!-- Telegram Protocol -->
+        <div class="account-card">
+          <div class="account-card-header">
+            <span style="font-size:1.5rem" aria-hidden="true">✈️</span>
+            <h3 data-i18n="tgLogoutTitle">Telegram Remote Session Termination</h3>
+          </div>
+          <p data-i18n="tgLogoutDesc">If logged into Telegram on your desktop, laptop, or another phone, you can instantly terminate access on the lost device.</p>
+          <div class="account-code-box">
+            Telegram > Settings > Devices (or Privacy &amp; Security) > Tap <strong>"Terminate All Other Sessions"</strong>
+          </div>
+          <p style="font-size:0.82rem; color:var(--ink-tertiary);" data-i18n="tgLogoutNote">This instantly logs out the lost phone and prevents unauthorized chat reading.</p>
+        </div>
+
+        <!-- Google & Apple Cloud Logout -->
+        <div class="account-card">
+          <div class="account-card-header">
+            <span style="font-size:1.5rem" aria-hidden="true">☁️</span>
+            <h3 data-i18n="cloudLogoutTitle">Google &amp; Apple Cloud Remote Sign-Out</h3>
+          </div>
+          <p data-i18n="cloudLogoutDesc">Remotely revoke session tokens so the thief cannot open your Gmail, Google Drive, Photos, or iCloud backups.</p>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <a href="https://myaccount.google.com/device-activity" target="_blank" rel="noopener noreferrer" class="btn btn-emerald" data-i18n="googleActivityBtn">Google Device Activity ↗</a>
+            <a href="https://appleid.apple.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="appleDevicesBtn">Apple ID Devices ↗</a>
+          </div>
+        </div>
+
+        <!-- Instagram & Meta Remote Logout -->
+        <div class="account-card">
+          <div class="account-card-header">
+            <span style="font-size:1.5rem" aria-hidden="true">📸</span>
+            <h3 data-i18n="metaLogoutTitle">Instagram &amp; Facebook (Meta) Logout</h3>
+          </div>
+          <p data-i18n="metaLogoutDesc">Protect your social media from misuse and impersonation from another computer or phone.</p>
+          <div class="account-code-box">
+            Instagram / Facebook > Settings > Accounts Center > Password and Security > <strong>Where you're logged in</strong> > Select lost device > Log Out
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CEIR Visual Form Walkthrough -->
+    <section class="ceir-walkthrough-section" id="ceir-walkthrough" aria-labelledby="ceirWalkthroughHeading">
+      <div class="section-header">
+        <div>
+          <h2 id="ceirWalkthroughHeading" data-i18n="ceirWalkthroughTitle">Official CEIR Form Step-by-Step Guide</h2>
+          <p data-i18n="ceirWalkthroughSubtitle">A visual walkthrough of the exact fields required on the DoT CEIR portal (ceir.sancharsaathi.gov.in).</p>
+        </div>
+      </div>
+
+      <div class="ceir-walkthrough-grid">
+        <div class="walkthrough-step-card">
+          <span class="walkthrough-step-num">Step 1</span>
+          <h3 data-i18n="ceirStep1Title">1. Device Information</h3>
+          <ul>
+            <li data-i18n="ceirStep1Field1"><strong>Mobile Number 1:</strong> Lost primary phone number.</li>
+            <li data-i18n="ceirStep1Field2"><strong>Mobile Number 2:</strong> Secondary SIM number (if dual SIM).</li>
+            <li data-i18n="ceirStep1Field3"><strong>IMEI 1 &amp; IMEI 2:</strong> 15-digit hardware identifiers from retail box or Google/Apple ID.</li>
+            <li data-i18n="ceirStep1Field4"><strong>Brand &amp; Model:</strong> Handset brand and exact model name.</li>
+            <li data-i18n="ceirStep1Field5"><strong>Purchase Invoice:</strong> Upload invoice PDF/image (Optional).</li>
+          </ul>
+        </div>
+
+        <div class="walkthrough-step-card">
+          <span class="walkthrough-step-num">Step 2</span>
+          <h3 data-i18n="ceirStep2Title">2. Lost Information</h3>
+          <ul>
+            <li data-i18n="ceirStep2Field1"><strong>Place of Loss:</strong> Exact locality, metro station, bus stop, or market.</li>
+            <li data-i18n="ceirStep2Field2"><strong>State &amp; District:</strong> Jurisdictional state and district.</li>
+            <li data-i18n="ceirStep2Field3"><strong>Police Station:</strong> Local police station where FIR/report was lodged.</li>
+            <li data-i18n="ceirStep2Field4"><strong>Complaint Number &amp; Date:</strong> Official report number and filing date.</li>
+            <li data-i18n="ceirStep2Field5"><strong>Upload Police Complaint:</strong> Clear photo/PDF of stamped FIR or e-FIR receipt (Mandatory).</li>
+          </ul>
+        </div>
+
+        <div class="walkthrough-step-card">
+          <span class="walkthrough-step-num">Step 3</span>
+          <h3 data-i18n="ceirStep3Title">3. Mobile Owner Info &amp; OTP</h3>
+          <ul>
+            <li data-i18n="ceirStep3Field1"><strong>Owner Name &amp; Address:</strong> Name matching government photo ID.</li>
+            <li data-i18n="ceirStep3Field2"><strong>Upload ID Proof:</strong> Masked Aadhaar, Voter ID, PAN, DL, or Passport.</li>
+            <li data-i18n="ceirStep3Field3"><strong>OTP Mobile Number:</strong> Must be your re-issued duplicate SIM (after 24-hr TRAI SMS delay).</li>
+            <li data-i18n="ceirStep3Field4"><strong>Save Request ID:</strong> Save the generated 18-digit Request ID securely for future tracking or unblocking.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- State Police Online Portals Directory -->
     <section class="state-police-section" id="state-police" aria-labelledby="statePoliceHeading">
       <div class="section-header">
@@ -2037,6 +2492,25 @@
           </button>
           <button type="button" class="btn btn-secondary" id="scratchClearBtn" data-i18n="scratchClearBtn">
             🗑️ Clear Scratchpad
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Civic WhatsApp & Social Share Hub -->
+    <section class="civic-share-section" id="civic-share" aria-labelledby="civicShareHeading">
+      <div class="civic-share-card">
+        <h2 id="civicShareHeading" data-i18n="civicShareTitle">Help Friends &amp; Family Stay Protected</h2>
+        <p data-i18n="civicShareSubtitle">Share this verified, 100% free public rescue guide so nobody falls for IMEI tracking scams or panic mistakes.</p>
+        <div class="civic-share-buttons">
+          <a href="https://api.whatsapp.com/send?text=Lost%20or%20stolen%20phone%20in%20India%3F%20Follow%20this%20step-by-step%20verified%20rescue%20guide%20to%20block%20SIM%2C%20protect%20UPI%2C%20file%20e-FIR%2C%20and%20blacklist%20IMEI%20on%20CEIR%3A%20https%3A%2F%2Fphonegone.myoss.in%2F" target="_blank" rel="noopener noreferrer" class="btn share-btn-wa" id="shareWaBtn" data-i18n="shareWaBtn">
+            📲 Share on WhatsApp
+          </a>
+          <a href="https://t.me/share/url?url=https%3A%2F%2Fphonegone.myoss.in%2F&amp;text=Lost%20or%20stolen%20phone%20rescue%20guide%20for%20India" target="_blank" rel="noopener noreferrer" class="btn share-btn-tg" id="shareTgBtn" data-i18n="shareTgBtn">
+            ✈️ Share on Telegram
+          </a>
+          <button type="button" class="btn btn-gold" id="copyShareLinkBtn" data-i18n="copyShareLinkBtn">
+            🔗 Copy Website Link
           </button>
         </div>
       </div>
@@ -2559,6 +3033,51 @@
           printBtn: "🖨️ Print / Save PDF",
           resetBtn: "🔄 Reset Progress",
 
+          bankFreezeTitle: "Emergency Bank & UPI Freezing Directory",
+          bankFreezeSubtitle: "Direct 24x7 emergency helplines to block Net Banking, Debit Cards, and UPI handles immediately.",
+
+          accountFreezeTitle: "Account Hijack Defense & Remote Logout",
+          accountFreezeSubtitle: "Prevent impersonation, malicious messages, and unauthorized access to your private conversations.",
+          waDeactTitle: "WhatsApp Official Deactivation",
+          waDeactDesc: "Send an email directly to official WhatsApp Support to immediately deactivate your account so thieves cannot message your contacts for money.",
+          openWaMailBtn: "📧 Open Email Client",
+          copyWaEmailBtn: "📋 Copy Template",
+          tgLogoutTitle: "Telegram Remote Session Termination",
+          tgLogoutDesc: "If logged into Telegram on your desktop, laptop, or another phone, you can instantly terminate access on the lost device.",
+          tgLogoutNote: "This instantly logs out the lost phone and prevents unauthorized chat reading.",
+          cloudLogoutTitle: "Google & Apple Cloud Remote Sign-Out",
+          cloudLogoutDesc: "Remotely revoke session tokens so the thief cannot open your Gmail, Google Drive, Photos, or iCloud backups.",
+          googleActivityBtn: "Google Device Activity ↗",
+          appleDevicesBtn: "Apple ID Devices ↗",
+          metaLogoutTitle: "Instagram & Facebook (Meta) Logout",
+          metaLogoutDesc: "Protect your social media from misuse and impersonation from another computer or phone.",
+
+          ceirWalkthroughTitle: "Official CEIR Form Step-by-Step Guide",
+          ceirWalkthroughSubtitle: "A visual walkthrough of the exact fields required on the DoT CEIR portal (ceir.sancharsaathi.gov.in).",
+          ceirStep1Title: "1. Device Information",
+          ceirStep1Field1: "<strong>Mobile Number 1:</strong> Lost primary phone number.",
+          ceirStep1Field2: "<strong>Mobile Number 2:</strong> Secondary SIM number (if dual SIM).",
+          ceirStep1Field3: "<strong>IMEI 1 & IMEI 2:</strong> 15-digit hardware identifiers from retail box or Google/Apple ID.",
+          ceirStep1Field4: "<strong>Brand & Model:</strong> Handset brand and exact model name.",
+          ceirStep1Field5: "<strong>Purchase Invoice:</strong> Upload invoice PDF/image (Optional).",
+          ceirStep2Title: "2. Lost Information",
+          ceirStep2Field1: "<strong>Place of Loss:</strong> Exact locality, metro station, bus stop, or market.",
+          ceirStep2Field2: "<strong>State & District:</strong> Jurisdictional state and district.",
+          ceirStep2Field3: "<strong>Police Station:</strong> Local police station where FIR/report was lodged.",
+          ceirStep2Field4: "<strong>Complaint Number & Date:</strong> Official report number and filing date.",
+          ceirStep2Field5: "<strong>Upload Police Complaint:</strong> Clear photo/PDF of stamped FIR or e-FIR receipt (Mandatory).",
+          ceirStep3Title: "3. Mobile Owner Info & OTP",
+          ceirStep3Field1: "<strong>Owner Name & Address:</strong> Name matching government photo ID.",
+          ceirStep3Field2: "<strong>Upload ID Proof:</strong> Masked Aadhaar, Voter ID, PAN, DL, or Passport.",
+          ceirStep3Field3: "<strong>OTP Mobile Number:</strong> Must be your re-issued duplicate SIM (after 24-hr TRAI SMS delay).",
+          ceirStep3Field4: "<strong>Save Request ID:</strong> Save the generated 18-digit Request ID securely for future tracking or unblocking.",
+
+          civicShareTitle: "Help Friends & Family Stay Protected",
+          civicShareSubtitle: "Share this verified, 100% free public rescue guide so nobody falls for IMEI tracking scams or panic mistakes.",
+          shareWaBtn: "📲 Share on WhatsApp",
+          shareTgBtn: "✈️ Share on Telegram",
+          copyShareLinkBtn: "🔗 Copy Website Link",
+
           statePoliceTitle: "State Police Online Portals Directory",
           statePoliceSubtitle: "Many Indian states allow filing a Lost Mobile / Missing Article report directly online from home.",
           statePoliceSelectLabel: "Select Your State / UT:",
@@ -2731,6 +3250,51 @@
           downloadBtn: "📥 चेकलिस्ट डाउनलोड करें (.txt)",
           printBtn: "🖨️ प्रिंट या PDF सेव करें",
           resetBtn: "🔄 प्रगति रीसेट करें",
+
+          bankFreezeTitle: "आपातकालीन बैंक व UPI फ्रीजिंग निर्देशिका",
+          bankFreezeSubtitle: "नेट बैंकिंग, डेबिट कार्ड और UPI को तुरंत ब्लॉक करने के लिए 24x7 आपातकालीन हेल्पलाइन नंबर।",
+
+          accountFreezeTitle: "सोशल मीडिया व WhatsApp खाता सुरक्षा",
+          accountFreezeSubtitle: "अपने नाम से फर्जी संदेश भेजने और निजी चैट के दुरुपयोग को रोकने के लिए त्वरित कदम।",
+          waDeactTitle: "WhatsApp खाता आधिकारिक रूप से बंद कराएं",
+          waDeactDesc: "WhatsApp सपोर्ट को ईमेल भेजकर अपना खाता तत्काल बंद कराएं ताकि कोई आपके संपर्कों से पैसे न मांग सके।",
+          openWaMailBtn: "📧 ईमेल ऐप खोलें",
+          copyWaEmailBtn: "📋 संदेश कॉपी करें",
+          tgLogoutTitle: "Telegram के अन्य सेशंस बंद करें",
+          tgLogoutDesc: "यदि Telegram किसी कंप्यूटर या अन्य डिवाइस में खुला है, तो खोए फोन से तुरंत एक्सेस समाप्त करें।",
+          tgLogoutNote: "इससे खोए फोन पर Telegram तुरंत लॉग आउट हो जाएगा और कोई चैट नहीं पढ़ सकेगा।",
+          cloudLogoutTitle: "Google व Apple खाता रिमोटली साइन आउट",
+          cloudLogoutDesc: "रिमोटली सत्र समाप्त करें ताकि कोई आपकी ईमेल, Google Drive, Photos या iCloud बैकअप न खोल सके।",
+          googleActivityBtn: "Google डिवाइस एक्टिविटी ↗",
+          appleDevicesBtn: "Apple ID डिवाइस ↗",
+          metaLogoutTitle: "Instagram व Facebook (Meta) लॉग आउट",
+          metaLogoutDesc: "अपने सोशल मीडिया खातों को किसी अन्य फोन या कंप्यूटर से सुरक्षित करने के लिए लॉग आउट करें।",
+
+          ceirWalkthroughTitle: "आधिकारिक CEIR फॉर्म भरने का संपूर्ण मार्गदर्शन",
+          ceirWalkthroughSubtitle: "दूरसंचार विभाग के पोर्टल (ceir.sancharsaathi.gov.in) पर फॉर्म भरते समय इन जानकारियों की आवश्यकता होगी।",
+          ceirStep1Title: "1. डिवाइस की जानकारी",
+          ceirStep1Field1: "<strong>मोबाइल नंबर 1:</strong> खोया हुआ मुख्य मोबाइल नंबर।",
+          ceirStep1Field2: "<strong>मोबाइल नंबर 2:</strong> दूसरा नंबर (यदि डुअल सिम फोन था)।",
+          ceirStep1Field3: "<strong>IMEI 1 व IMEI 2:</strong> डिब्बे या Google/Apple खाते से प्राप्त 15 अंकों का नंबर।",
+          ceirStep1Field4: "<strong>ब्रांड व मॉडल:</strong> फोन की कंपनी और मॉडल का सही नाम।",
+          ceirStep1Field5: "<strong>खरीद रसीद (Invoice):</strong> बिल की PDF या फोटो (वैकल्पिक)।",
+          ceirStep2Title: "2. खोने का स्थान व FIR",
+          ceirStep2Field1: "<strong>खोने का स्थान:</strong> सही इलाका, मेट्रो स्टेशन, बस स्टैंड या बाजार।",
+          ceirStep2Field2: "<strong>राज्य व जिला:</strong> संबंधित राज्य और जिला।",
+          ceirStep2Field3: "<strong>पुलिस थाना:</strong> वह थाना जहाँ FIR या गुमशुदगी रिपोर्ट दर्ज हुई।",
+          ceirStep2Field4: "<strong>शिकायत संख्या व तारीख:</strong> पुलिस रिपोर्ट नंबर और दर्ज करने की तिथि।",
+          ceirStep2Field5: "<strong>पुलिस रिपोर्ट अपलोड:</strong> मुहर लगी FIR या ई-रसीद की साफ फोटो/PDF (अनिवार्य)।",
+          ceirStep3Title: "3. फोन मालिक की जानकारी व OTP",
+          ceirStep3Field1: "<strong>मालिक का नाम व पता:</strong> सरकारी पहचान पत्र के अनुसार पूरा नाम व पता।",
+          ceirStep3Field2: "<strong>पहचान पत्र अपलोड:</strong> मास्क्ड आधार, वोटर आईडी, पैन कार्ड, डीएल या पासपोर्ट।",
+          ceirStep3Field3: "<strong>OTP हेतु मोबाइल नंबर:</strong> आपकी वही डुप्लीकेट सिम (24 घंटे बाद सक्रिय SMS वाली)।",
+          ceirStep3Field4: "<strong>Request ID संभालें:</strong> फॉर्म जमा होने पर मिली 18 अंकों की Request ID डायरी में लिख लें।",
+
+          civicShareTitle: "अपने दोस्तों व परिवार को सुरक्षित रखें",
+          civicShareSubtitle: "इस प्रामाणिक व निःशुल्क मार्गदर्शिका को साझा करें ताकि कोई धोखाधड़ी या फेक IMEI ट्रैकर के जाल में न फंसे।",
+          shareWaBtn: "📲 WhatsApp पर शेयर करें",
+          shareTgBtn: "✈️ Telegram पर शेयर करें",
+          copyShareLinkBtn: "🔗 वेबसाइट लिंक कॉपी करें",
 
           statePoliceTitle: "राज्य पुलिस ऑनलाइन पोर्टल निर्देशिका",
           statePoliceSubtitle: "कई राज्यों में घर बैठे ऑनलाइन खोए फोन / वस्तु की रिपोर्ट दर्ज करने की सुविधा उपलब्ध है।",
@@ -3565,7 +4129,6 @@
             navigator.clipboard.writeText(summary).then(() => {
               showToast(i18n[state.lang].scratchCopiedToast);
             }).catch(() => {
-              // Fallback prompt
               prompt("Copy your summary below:", summary);
             });
           });
@@ -3582,6 +4145,32 @@
             state.scratchpad = {};
             saveState();
             showToast(i18n[state.lang].scratchClearedToast);
+          });
+        }
+      }
+
+      // Wire Up WhatsApp Email Copy
+      function initAccountDefense() {
+        const copyWaBtn = document.getElementById('copyWaEmailBtn');
+        if (copyWaBtn) {
+          copyWaBtn.addEventListener('click', () => {
+            const waText = "To: support@whatsapp.com\nSubject: Lost/Stolen: Please deactivate my account\n\nLost/Stolen: Please deactivate my account associated with phone number +91 [Enter your number with country code]";
+            navigator.clipboard.writeText(waText).then(() => {
+              showToast("WhatsApp email template copied!");
+            }).catch(() => {
+              prompt("Copy text below:", waText);
+            });
+          });
+        }
+
+        const copyShareLinkBtn = document.getElementById('copyShareLinkBtn');
+        if (copyShareLinkBtn) {
+          copyShareLinkBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText("https://phonegone.myoss.in/").then(() => {
+              showToast("Link copied to clipboard!");
+            }).catch(() => {
+              prompt("Website URL:", "https://phonegone.myoss.in/");
+            });
           });
         }
       }
@@ -3620,14 +4209,23 @@
         });
       }
 
+      // Register Offline Service Worker
+      function registerServiceWorker() {
+        if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+          navigator.serviceWorker.register('./sw.js').catch(function () {});
+        }
+      }
+
       // Initialize Everything on DOM Ready
       document.addEventListener('DOMContentLoaded', () => {
         loadState();
         updateTranslations();
         initDocCheckboxes();
         initScratchpad();
+        initAccountDefense();
         initThemeToggle();
         initTabKeyboardNav();
+        registerServiceWorker();
 
         // Scenario tab clicks
         document.querySelectorAll('.scenario-tab').forEach(b => {
