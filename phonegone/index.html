@@ -51,9 +51,25 @@
       --gold-surface: #fefce8;
       --gold-border: #fef08a;
 
+      /* Unified Modular Typography Scale (Aim: <= 10, now 7 tokens) */
+      --text-xs: 0.8125rem;  /* 13px - micro badges, tags, pills (>= 12px) */
+      --text-sm: 0.875rem;   /* 14px - secondary body, helpers, metadata, footnotes */
+      --text-base: 1rem;     /* 16px - body default, inputs, buttons, checklist */
+      --text-md: 1.125rem;   /* 18px - card titles, lead text, h3 */
+      --text-lg: 1.25rem;    /* 20px - subheadings, contact headers */
+      --text-xl: 1.5rem;     /* 24px - section headers h2 */
+      --text-2xl: clamp(2.1rem, 5.5vw, 3.4rem); /* hero title display */
+
+      /* Unified Semantic Text Color Tokens (Aim: <= 12, now 9 tokens) */
       --ink-primary: #0a1f1a;
       --ink-secondary: #364b46;
       --ink-tertiary: #526863;
+      --ink-inverse: #ffffff;
+      --ink-inverse-muted: #d1e5dd;
+      --ink-brand: #064e3b;
+      --ink-accent: #8c6b1d;
+      --ink-danger: #991b1b;
+      --ink-info: #1e40af;
       
       --bg-page: #f8faf9;
       --bg-card: #ffffff;
@@ -92,10 +108,20 @@
       --ink-primary: #f0f7f4;
       --ink-secondary: #cde0d7;
       --ink-tertiary: #8ea89d;
+      --ink-inverse: #ffffff;
+      --ink-inverse-muted: #cbdad3;
+      --ink-brand: #34d399;
+      --ink-accent: #fbe29b;
+      --ink-danger: #fca5a5;
+      --ink-info: #93c5fd;
 
       --bg-page: #071310;
       --bg-card: #0f211c;
       --border-subtle: #19382e;
+
+      --alert-red-bg: #3b1111;
+      --alert-red-border: #450a0a;
+      --alert-red-text: #fca5a5;
 
       --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
       --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
@@ -141,7 +167,7 @@
       top: -60px;
       left: 1rem;
       background: var(--gold-bright);
-      color: #022319;
+      color: var(--ink-primary);
       padding: 0.75rem 1.25rem;
       font-weight: 800;
       border-radius: var(--radius-sm);
@@ -164,8 +190,8 @@
     /* Top Notice Banner */
     .top-bar {
       background: var(--em-deep);
-      color: #e5ede9;
-      font-size: 0.84rem;
+      color: var(--ink-inverse-muted);
+      font-size: var(--text-sm);
       padding: 0.55rem 1.25rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     }
@@ -195,8 +221,8 @@
     .theme-toggle-btn {
       background: rgba(255, 255, 255, 0.12);
       border: 1px solid rgba(255, 255, 255, 0.25);
-      color: #ffffff;
-      font-size: 0.78rem;
+      color: var(--ink-inverse);
+      font-size: var(--text-xs);
       font-weight: 700;
       padding: 0.35rem 0.65rem;
       border-radius: var(--radius-sm);
@@ -213,7 +239,7 @@
     /* Header & Navigation */
     header {
       background: linear-gradient(135deg, var(--em-deep) 0%, var(--em-dark) 45%, var(--em-main) 100%);
-      color: #ffffff;
+      color: var(--ink-inverse);
       padding: 1.25rem 1.25rem 3.5rem;
       border-bottom: 3px solid var(--gold-main);
       position: relative;
@@ -234,7 +260,7 @@
       align-items: center;
       gap: 0.85rem;
       text-decoration: none;
-      color: #ffffff;
+      color: var(--ink-inverse);
     }
     .brand-emblem-wrap {
       width: 44px;
@@ -253,7 +279,7 @@
       flex-direction: column;
     }
     .brand-title {
-      font-size: 1.45rem;
+      font-size: var(--text-lg);
       font-weight: 900;
       letter-spacing: -0.03em;
       line-height: 1.1;
@@ -262,11 +288,11 @@
       color: var(--gold-bright);
     }
     .brand-tagline {
-      font-size: 0.68rem;
+      font-size: var(--text-xs);
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #b5d5ca;
+      color: var(--ink-inverse-muted);
     }
 
     .nav-controls {
@@ -278,8 +304,8 @@
     .lang-switcher {
       background: rgba(255, 255, 255, 0.12);
       border: 1px solid rgba(255, 255, 255, 0.35);
-      color: #ffffff;
-      font-size: 0.88rem;
+      color: var(--ink-inverse);
+      font-size: var(--text-sm);
       font-weight: 700;
       padding: 0.5rem 0.85rem;
       border-radius: var(--radius-sm);
@@ -295,21 +321,21 @@
     .lang-switcher select {
       background: transparent;
       border: none;
-      color: #ffffff;
-      font-size: 0.88rem;
+      color: var(--ink-inverse);
+      font-size: var(--text-sm);
       font-weight: 700;
       cursor: pointer;
       outline: none;
     }
     .lang-switcher select option {
       background: var(--em-deep);
-      color: #ffffff;
+      color: var(--ink-inverse);
     }
 
     .nav-emergency-btn {
       background: #dc2626;
-      color: #ffffff;
-      font-size: 0.85rem;
+      color: var(--ink-inverse);
+      font-size: var(--text-sm);
       font-weight: 800;
       padding: 0.5rem 0.85rem;
       border-radius: var(--radius-sm);
@@ -346,7 +372,7 @@
       color: var(--gold-bright);
       padding: 0.35rem 0.95rem;
       border-radius: var(--radius-full);
-      font-size: 0.8rem;
+      font-size: var(--text-xs);
       font-weight: 700;
       letter-spacing: 0.04em;
       text-transform: uppercase;
@@ -357,24 +383,24 @@
       gap: 0.35rem;
       background: rgba(16, 185, 129, 0.18);
       border: 1px solid rgba(52, 211, 153, 0.4);
-      color: #a7f3d0;
+      color: var(--ink-inverse);
       padding: 0.35rem 0.85rem;
       border-radius: var(--radius-full);
-      font-size: 0.78rem;
+      font-size: var(--text-xs);
       font-weight: 700;
     }
     .hero h1 {
-      font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+      font-size: var(--text-2xl);
       font-weight: 900;
       line-height: 1.15;
       letter-spacing: -0.04em;
       margin-bottom: 1.25rem;
-      color: #ffffff;
+      color: var(--ink-inverse);
     }
     .hero p {
-      font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+      font-size: var(--text-md);
       line-height: 1.6;
-      color: #d1e5dd;
+      color: var(--ink-inverse-muted);
       max-width: 720px;
       margin: 0 auto 2rem;
     }
@@ -392,7 +418,7 @@
       justify-content: center;
       gap: 0.5rem;
       padding: 0.85rem 1.4rem;
-      font-size: 0.98rem;
+      font-size: var(--text-base);
       font-weight: 800;
       border-radius: var(--radius-md);
       text-decoration: none;
@@ -406,24 +432,18 @@
     }
     .btn-gold {
       background: var(--gold-bright);
-      color: #022319;
+      color: var(--ink-primary);
       box-shadow: 0 4px 14px rgba(205, 163, 79, 0.35);
     }
     .btn-gold:hover {
       background: #f7dd9b;
       box-shadow: 0 6px 20px rgba(205, 163, 79, 0.5);
     }
-    .btn-translucent {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      color: #ffffff;
-    }
-    .btn-translucent:hover {
-      background: rgba(255, 255, 255, 0.22);
-    }
+    
+    
     .btn-emerald {
       background: var(--em-main);
-      color: #ffffff;
+      color: var(--ink-inverse);
     }
     .btn-emerald:hover {
       background: var(--em-dark);
@@ -476,7 +496,7 @@
       border-left-color: #ef4444;
     }
     .urgent-card h2 {
-      font-size: 1.05rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
       margin-bottom: 0.35rem;
@@ -485,7 +505,7 @@
       gap: 0.4rem;
     }
     .urgent-card p {
-      font-size: 0.88rem;
+      font-size: var(--text-sm);
       color: var(--ink-tertiary);
       line-height: 1.5;
     }
@@ -500,14 +520,14 @@
       flex-wrap: wrap;
     }
     .section-header h2 {
-      font-size: 1.65rem;
+      font-size: var(--text-xl);
       font-weight: 900;
       letter-spacing: -0.03em;
       color: var(--ink-primary);
       line-height: 1.2;
     }
     .section-header p {
-      font-size: 0.95rem;
+      font-size: var(--text-base);
       color: var(--ink-tertiary);
       margin-top: 0.25rem;
     }
@@ -535,7 +555,7 @@
       border-color: var(--em-light);
     }
     .timeline-step-badge {
-      font-size: 0.7rem;
+      font-size: var(--text-xs);
       font-weight: 800;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -544,32 +564,32 @@
       width: fit-content;
       margin-bottom: 0.4rem;
     }
-    .t-badge-1 { background: #fee2e2; color: #991b1b; }
-    .t-badge-2 { background: #fef3c7; color: #92400e; }
-    .t-badge-3 { background: #e0f2fe; color: #075985; }
-    .t-badge-4 { background: #f3e8ff; color: #6b21a8; }
-    .t-badge-5 { background: var(--em-subtle); color: var(--em-dark); }
-    body.theme-dark .t-badge-1 { background: #3b1111; color: #fca5a5; }
-    body.theme-dark .t-badge-2 { background: #3b280c; color: #fcd34d; }
-    body.theme-dark .t-badge-3 { background: #0c2738; color: #7dd3fc; }
-    body.theme-dark .t-badge-4 { background: #261238; color: #d8b4fe; }
-    body.theme-dark .t-badge-5 { background: #133329; color: #6ee7b7; }
+    .t-badge-1 { background: #fee2e2; color: var(--alert-red-text); }
+    .t-badge-2 { background: #fef3c7; color: var(--ink-accent); }
+    .t-badge-3 { background: #e0f2fe; color: var(--ink-info); }
+    .t-badge-4 { background: #f3e8ff; color: var(--ink-info); }
+    .t-badge-5 { background: var(--em-subtle); color: var(--ink-brand); }
+    body.theme-dark .t-badge-1 { background: #3b1111; color: var(--alert-red-text); }
+    body.theme-dark .t-badge-2 { background: #3b280c; color: var(--ink-accent); }
+    body.theme-dark .t-badge-3 { background: #0c2738; color: var(--ink-info); }
+    body.theme-dark .t-badge-4 { background: #261238; color: var(--ink-info); }
+    body.theme-dark .t-badge-5 { background: #133329; color: var(--ink-brand); }
 
     .timeline-time {
-      font-size: 0.75rem;
+      font-size: var(--text-xs);
       font-weight: 800;
       color: var(--ink-tertiary);
       margin-bottom: 0.25rem;
     }
     .timeline-title {
-      font-size: 0.95rem;
+      font-size: var(--text-base);
       font-weight: 800;
       color: var(--ink-primary);
       margin-bottom: 0.35rem;
       line-height: 1.25;
     }
     .timeline-desc {
-      font-size: 0.8rem;
+      font-size: var(--text-xs);
       color: var(--ink-secondary);
       line-height: 1.45;
     }
@@ -600,7 +620,7 @@
       background: var(--em-surface);
     }
     .scenario-tab.active {
-      border-color: var(--em-main);
+      border-color: var(--ink-brand);
       background: var(--bg-card);
       box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.15), var(--shadow-sm);
     }
@@ -614,16 +634,16 @@
       margin-bottom: 0.35rem;
     }
     .scenario-tab-icon {
-      font-size: 1.4rem;
+      font-size: var(--text-lg);
       line-height: 1;
     }
     .scenario-tab-title {
-      font-size: 1.05rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
     }
     .scenario-tab-desc {
-      font-size: 0.85rem;
+      font-size: var(--text-sm);
       color: var(--ink-tertiary);
       line-height: 1.35;
     }
@@ -642,12 +662,12 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 0.65rem;
-      font-size: 0.95rem;
+      font-size: var(--text-base);
       font-weight: 800;
       color: var(--ink-secondary);
     }
     .progress-count {
-      color: var(--em-main);
+      color: var(--ink-brand);
     }
     body.theme-dark .progress-count {
       color: var(--gold-bright);
@@ -709,7 +729,7 @@
     .step-checkbox {
       width: 24px;
       height: 24px;
-      accent-color: var(--em-main);
+      accent-color: var(--ink-brand);
       cursor: pointer;
       margin-top: 0.2rem;
     }
@@ -725,27 +745,27 @@
       flex-wrap: wrap;
     }
     .step-tag {
-      font-size: 0.72rem;
+      font-size: var(--text-xs);
       font-weight: 800;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       padding: 0.2rem 0.55rem;
       border-radius: var(--radius-sm);
       background: var(--em-subtle);
-      color: var(--em-dark);
+      color: var(--ink-brand);
     }
     .step-tag.urgent-tag {
       background: #fee2e2;
-      color: #991b1b;
+      color: var(--alert-red-text);
     }
     .step-tag.gold-tag {
       background: var(--gold-surface);
-      color: var(--gold-dark);
+      color: var(--ink-accent);
       border: 1px solid var(--gold-border);
     }
     body.theme-dark .step-tag.urgent-tag {
       background: #3b1111;
-      color: #fca5a5;
+      color: var(--alert-red-text);
     }
     body.theme-dark .step-tag.gold-tag {
       background: #2b2410;
@@ -753,14 +773,14 @@
       border-color: var(--gold-border);
     }
     .step-title {
-      font-size: 1.08rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
       margin: 0;
       line-height: 1.35;
     }
     .step-desc {
-      font-size: 0.92rem;
+      font-size: var(--text-sm);
       color: var(--ink-secondary);
       line-height: 1.55;
       margin: 0.2rem 0 0.5rem;
@@ -775,9 +795,9 @@
       display: inline-flex;
       align-items: center;
       gap: 0.3rem;
-      font-size: 0.88rem;
+      font-size: var(--text-sm);
       font-weight: 700;
-      color: var(--em-main);
+      color: var(--ink-brand);
       text-decoration: underline;
       text-underline-offset: 3px;
     }
@@ -785,7 +805,7 @@
       color: var(--gold-bright);
     }
     .step-link:hover {
-      color: var(--em-deep);
+      color: var(--ink-primary);
     }
 
     /* Checklist Toolbar */
@@ -829,22 +849,22 @@
       margin-bottom: 0.5rem;
     }
     .bank-name {
-      font-size: 1.05rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
     }
     .bank-badge {
-      font-size: 0.7rem;
+      font-size: var(--text-xs);
       font-weight: 800;
       padding: 0.15rem 0.45rem;
       border-radius: var(--radius-sm);
       background: #eff6ff;
-      color: #1e40af;
+      color: var(--ink-info);
       text-transform: uppercase;
     }
     body.theme-dark .bank-badge {
       background: #172554;
-      color: #93c5fd;
+      color: var(--ink-info);
     }
     .bank-numbers {
       margin: 0.75rem 0 1rem;
@@ -853,9 +873,9 @@
       gap: 0.35rem;
     }
     .bank-tel-link {
-      color: var(--em-main);
+      color: var(--ink-brand);
       font-weight: 800;
-      font-size: 0.95rem;
+      font-size: var(--text-base);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
@@ -865,7 +885,7 @@
       color: var(--gold-bright);
     }
     .bank-note {
-      font-size: 0.78rem;
+      font-size: var(--text-xs);
       color: var(--ink-tertiary);
     }
 
@@ -893,12 +913,12 @@
       margin-bottom: 0.85rem;
     }
     .account-card-header h3 {
-      font-size: 1.15rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
     }
     .account-card p {
-      font-size: 0.88rem;
+      font-size: var(--text-sm);
       color: var(--ink-secondary);
       line-height: 1.55;
       margin-bottom: 1rem;
@@ -909,7 +929,7 @@
       border-radius: var(--radius-sm);
       padding: 0.75rem;
       font-family: monospace;
-      font-size: 0.85rem;
+      font-size: var(--text-sm);
       color: var(--ink-primary);
       margin-bottom: 1rem;
       word-break: break-all;
@@ -929,10 +949,10 @@
     .ceir-alert {
       background: var(--gold-surface);
       border: 1px solid var(--gold-border);
-      color: #713f12;
+      color: var(--ink-accent);
       border-radius: var(--radius-md);
       padding: 1rem 1.25rem;
-      font-size: 0.92rem;
+      font-size: var(--text-sm);
       line-height: 1.5;
       margin-bottom: 1.5rem;
       display: flex;
@@ -941,7 +961,7 @@
     }
     body.theme-dark .ceir-alert {
       background: #2b2410;
-      color: #fde68a;
+      color: var(--ink-accent);
       border-color: var(--gold-border);
     }
     .ceir-docs-grid {
@@ -971,7 +991,7 @@
     .ceir-doc-item input {
       width: 20px;
       height: 20px;
-      accent-color: var(--em-main);
+      accent-color: var(--ink-brand);
       margin-top: 0.15rem;
       flex-shrink: 0;
     }
@@ -982,7 +1002,7 @@
     }
     .ceir-doc-badge {
       display: inline-block;
-      font-size: 0.7rem;
+      font-size: var(--text-xs);
       font-weight: 800;
       letter-spacing: 0.04em;
       text-transform: uppercase;
@@ -992,27 +1012,27 @@
     }
     .badge-mandatory {
       background: #fee2e2;
-      color: #991b1b;
+      color: var(--alert-red-text);
     }
     .badge-optional {
       background: #e2e8f0;
-      color: #475569;
+      color: var(--ink-tertiary);
     }
     body.theme-dark .badge-mandatory {
       background: #3b1111;
-      color: #fca5a5;
+      color: var(--alert-red-text);
     }
     body.theme-dark .badge-optional {
       background: #1e293b;
-      color: #94a3b8;
+      color: var(--ink-tertiary);
     }
     .ceir-doc-name {
-      font-size: 0.95rem;
+      font-size: var(--text-base);
       font-weight: 700;
       color: var(--ink-primary);
     }
     .ceir-doc-note {
-      font-size: 0.82rem;
+      font-size: var(--text-xs);
       color: var(--ink-tertiary);
     }
 
@@ -1038,16 +1058,16 @@
     }
     .imei-helper summary {
       font-weight: 800;
-      color: var(--em-dark);
+      color: var(--ink-brand);
       cursor: pointer;
-      font-size: 0.95rem;
+      font-size: var(--text-base);
     }
     body.theme-dark .imei-helper summary {
       color: var(--gold-bright);
     }
     .imei-helper-content {
       margin-top: 0.75rem;
-      font-size: 0.9rem;
+      font-size: var(--text-sm);
       color: var(--ink-secondary);
       line-height: 1.6;
     }
@@ -1078,9 +1098,9 @@
     }
     .walkthrough-step-num {
       display: inline-block;
-      font-size: 0.78rem;
+      font-size: var(--text-xs);
       font-weight: 800;
-      color: var(--em-main);
+      color: var(--ink-brand);
       background: var(--em-subtle);
       padding: 0.2rem 0.6rem;
       border-radius: var(--radius-sm);
@@ -1089,17 +1109,17 @@
     }
     body.theme-dark .walkthrough-step-num {
       background: #102d24;
-      color: #a7f3d0;
+      color: var(--ink-inverse);
     }
     .walkthrough-step-card h3 {
-      font-size: 1.1rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
       margin-bottom: 0.5rem;
     }
     .walkthrough-step-card ul {
       padding-left: 1.15rem;
-      font-size: 0.88rem;
+      font-size: var(--text-sm);
       color: var(--ink-secondary);
       line-height: 1.55;
     }
@@ -1128,7 +1148,7 @@
     .state-selector-wrap label {
       font-weight: 800;
       color: var(--ink-primary);
-      font-size: 0.95rem;
+      font-size: var(--text-base);
     }
     .state-select {
       background: var(--bg-page);
@@ -1136,14 +1156,14 @@
       border: 2px solid var(--border-subtle);
       border-radius: var(--radius-sm);
       padding: 0.6rem 1rem;
-      font-size: 0.95rem;
+      font-size: var(--text-base);
       font-weight: 700;
       cursor: pointer;
       outline: none;
       max-width: 100%;
     }
     .state-select:focus {
-      border-color: var(--em-main);
+      border-color: var(--ink-brand);
     }
     .state-police-details {
       background: var(--em-surface);
@@ -1161,13 +1181,13 @@
       border-color: #1f473c;
     }
     .state-police-info h3 {
-      font-size: 1.15rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
       margin-bottom: 0.25rem;
     }
     .state-police-info p {
-      font-size: 0.88rem;
+      font-size: var(--text-sm);
       color: var(--ink-secondary);
       line-height: 1.5;
     }
@@ -1177,8 +1197,8 @@
       gap: 0.25rem;
       background: rgba(16, 185, 129, 0.15);
       border: 1px solid rgba(5, 150, 105, 0.4);
-      color: #065f46;
-      font-size: 0.72rem;
+      color: var(--ink-brand);
+      font-size: var(--text-xs);
       font-weight: 800;
       padding: 0.15rem 0.45rem;
       border-radius: var(--radius-sm);
@@ -1188,7 +1208,7 @@
     body.theme-dark .gov-pill {
       background: rgba(5, 150, 105, 0.25);
       border-color: rgba(52, 211, 153, 0.4);
-      color: #6ee7b7;
+      color: var(--ink-brand);
     }
 
     /* Private Scratchpad */
@@ -1215,7 +1235,7 @@
       gap: 0.35rem;
     }
     .scratchpad-field label {
-      font-size: 0.85rem;
+      font-size: var(--text-sm);
       font-weight: 700;
       color: var(--ink-secondary);
     }
@@ -1224,14 +1244,14 @@
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-sm);
       padding: 0.65rem 0.85rem;
-      font-size: 0.92rem;
+      font-size: var(--text-sm);
       color: var(--ink-primary);
       outline: none;
       font-family: inherit;
       transition: border-color 0.15s;
     }
     .scratchpad-field input:focus, .scratchpad-field textarea:focus {
-      border-color: var(--em-main);
+      border-color: var(--ink-brand);
     }
     .scratchpad-actions {
       display: flex;
@@ -1245,7 +1265,7 @@
     }
     .civic-share-card {
       background: linear-gradient(135deg, var(--em-deep) 0%, var(--em-main) 100%);
-      color: #ffffff;
+      color: var(--ink-inverse);
       border: 1px solid var(--gold-main);
       border-radius: var(--radius-lg);
       padding: 2rem;
@@ -1253,14 +1273,14 @@
       text-align: center;
     }
     .civic-share-card h2 {
-      font-size: 1.5rem;
+      font-size: var(--text-xl);
       font-weight: 900;
       margin-bottom: 0.5rem;
-      color: #ffffff;
+      color: var(--ink-inverse);
     }
     .civic-share-card p {
-      color: #d1e5dd;
-      font-size: 0.95rem;
+      color: var(--ink-inverse-muted);
+      font-size: var(--text-base);
       max-width: 650px;
       margin: 0 auto 1.5rem;
     }
@@ -1270,20 +1290,10 @@
       gap: 0.75rem;
       flex-wrap: wrap;
     }
-    .share-btn-wa {
-      background: #25d366;
-      color: #ffffff;
-    }
-    .share-btn-wa:hover {
-      background: #1ebc59;
-    }
-    .share-btn-tg {
-      background: #229ed9;
-      color: #ffffff;
-    }
-    .share-btn-tg:hover {
-      background: #1c88bd;
-    }
+    
+    
+    
+    
 
     /* Emergency Helplines & Telecom Grid */
     .contacts-grid {
@@ -1306,7 +1316,7 @@
       margin-bottom: 1rem;
     }
     .contact-card-header h3 {
-      font-size: 1.2rem;
+      font-size: var(--text-lg);
       font-weight: 800;
       color: var(--ink-primary);
     }
@@ -1327,26 +1337,26 @@
     }
     .helpline-title {
       font-weight: 800;
-      color: #991b1b;
-      font-size: 1rem;
+      color: var(--alert-red-text);
+      font-size: var(--text-base);
     }
     body.theme-dark .helpline-title {
-      color: #fca5a5;
+      color: var(--alert-red-text);
     }
     .helpline-desc {
-      font-size: 0.82rem;
-      color: #7f1d1d;
+      font-size: var(--text-xs);
+      color: var(--alert-red-text);
     }
     body.theme-dark .helpline-desc {
-      color: #fecaca;
+      color: var(--alert-red-text);
     }
     .helpline-call-btn {
       background: #dc2626;
-      color: #ffffff;
+      color: var(--ink-inverse);
       padding: 0.45rem 0.95rem;
       border-radius: var(--radius-sm);
       font-weight: 800;
-      font-size: 0.9rem;
+      font-size: var(--text-sm);
       text-decoration: none;
       white-space: nowrap;
     }
@@ -1370,11 +1380,11 @@
     .telecom-name {
       font-weight: 800;
       color: var(--ink-primary);
-      font-size: 0.95rem;
+      font-size: var(--text-base);
     }
     .telecom-number {
-      font-size: 0.88rem;
-      color: var(--em-main);
+      font-size: var(--text-sm);
+      color: var(--ink-brand);
       font-weight: 700;
       text-decoration: none;
     }
@@ -1409,35 +1419,35 @@
     }
     .tool-badge {
       display: inline-block;
-      font-size: 0.72rem;
+      font-size: var(--text-xs);
       font-weight: 800;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       padding: 0.15rem 0.45rem;
       border-radius: var(--radius-sm);
       background: var(--em-subtle);
-      color: var(--em-dark);
+      color: var(--ink-brand);
       margin-bottom: 0.5rem;
     }
     body.theme-dark .tool-badge {
       background: #102d24;
-      color: #a7f3d0;
+      color: var(--ink-inverse);
     }
     .tool-card h3 {
-      font-size: 1.1rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
       margin-bottom: 0.35rem;
     }
     .tool-card p {
-      font-size: 0.88rem;
+      font-size: var(--text-sm);
       color: var(--ink-tertiary);
       line-height: 1.5;
     }
     .tool-card a {
-      font-size: 0.9rem;
+      font-size: var(--text-sm);
       font-weight: 800;
-      color: var(--em-main);
+      color: var(--ink-brand);
       text-decoration: underline;
       text-underline-offset: 3px;
     }
@@ -1465,7 +1475,7 @@
       border-top: 4px solid #ef4444;
     }
     .boundary-card h3 {
-      font-size: 1.15rem;
+      font-size: var(--text-md);
       font-weight: 800;
       margin-bottom: 1rem;
       display: flex;
@@ -1479,7 +1489,7 @@
       gap: 0.65rem;
     }
     .boundary-card li {
-      font-size: 0.92rem;
+      font-size: var(--text-sm);
       color: var(--ink-secondary);
       display: flex;
       align-items: flex-start;
@@ -1511,7 +1521,7 @@
     }
     .faq-item summary {
       padding: 1.15rem 1.25rem;
-      font-size: 1.05rem;
+      font-size: var(--text-md);
       font-weight: 800;
       color: var(--ink-primary);
       cursor: pointer;
@@ -1525,9 +1535,9 @@
     }
     .faq-item summary::after {
       content: "+";
-      font-size: 1.4rem;
+      font-size: var(--text-lg);
       font-weight: 700;
-      color: var(--em-main);
+      color: var(--ink-brand);
       margin-left: 0.5rem;
       transition: transform 0.2s;
     }
@@ -1540,7 +1550,7 @@
     }
     .faq-body {
       padding: 0 1.25rem 1.25rem;
-      font-size: 0.95rem;
+      font-size: var(--text-base);
       color: var(--ink-secondary);
       line-height: 1.6;
       border-top: 1px solid #f1f5f3;
@@ -1567,20 +1577,20 @@
       border-color: #1f473c;
     }
     .privacy-icon {
-      font-size: 2.2rem;
+      font-size: var(--text-xl);
       line-height: 1;
     }
     .privacy-text h3 {
-      font-size: 1.15rem;
+      font-size: var(--text-md);
       font-weight: 800;
-      color: var(--em-deep);
+      color: var(--ink-primary);
       margin-bottom: 0.25rem;
     }
     body.theme-dark .privacy-text h3 {
       color: var(--gold-bright);
     }
     .privacy-text p {
-      font-size: 0.9rem;
+      font-size: var(--text-sm);
       color: var(--ink-secondary);
       line-height: 1.55;
     }
@@ -1588,10 +1598,10 @@
     /* Footer */
     footer {
       background: var(--em-deep);
-      color: #cbdad3;
+      color: var(--ink-inverse-muted);
       padding: 3rem 1.25rem 2.5rem;
       border-top: 3px solid var(--gold-main);
-      font-size: 0.9rem;
+      font-size: var(--text-sm);
     }
     .footer-inner {
       max-width: 1100px;
@@ -1601,8 +1611,8 @@
       gap: 2rem;
     }
     .footer-brand strong {
-      color: #ffffff;
-      font-size: 1.3rem;
+      color: var(--ink-inverse);
+      font-size: var(--text-lg);
       font-weight: 900;
     }
     .footer-brand strong span {
@@ -1610,18 +1620,17 @@
     }
     .footer-brand p {
       margin-top: 0.6rem;
-      font-size: 0.88rem;
-      color: #9cb5ab;
+      font-size: var(--text-sm);
+      color: var(--ink-inverse-muted);
       line-height: 1.6;
       max-width: 440px;
     }
     .footer-col h4 {
-      color: #ffffff;
-      font-size: 0.95rem;
-      font-weight: 800;
+      color: var(--ink-inverse);
+      font-size: var(--text-base);
+      font-weight: 700;
       margin-bottom: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.02em;
     }
     .footer-col ul {
       list-style: none;
@@ -1630,9 +1639,9 @@
       gap: 0.5rem;
     }
     .footer-col a {
-      color: #d1e5dd;
+      color: var(--ink-inverse-muted);
       text-decoration: none;
-      font-size: 0.88rem;
+      font-size: var(--text-sm);
       transition: color 0.15s;
     }
     .footer-col a:hover {
@@ -1649,8 +1658,8 @@
       align-items: center;
       gap: 1rem;
       flex-wrap: wrap;
-      font-size: 0.82rem;
-      color: #8da69c;
+      font-size: var(--text-xs);
+      color: var(--ink-inverse-muted);
     }
 
     /* Mobile Quick SOS Bottom Dock */
@@ -1673,7 +1682,7 @@
       justify-content: center;
       gap: 0.35rem;
       padding: 0.55rem 0.5rem;
-      font-size: 0.85rem;
+      font-size: var(--text-sm);
       font-weight: 800;
       border-radius: var(--radius-sm);
       text-decoration: none;
@@ -1682,17 +1691,17 @@
     }
     .sos-112 {
       background: #dc2626;
-      color: #ffffff;
+      color: var(--ink-inverse);
       border: 1px solid #ef4444;
     }
     .sos-1930 {
       background: #0284c7;
-      color: #ffffff;
+      color: var(--ink-inverse);
       border: 1px solid #38bdf8;
     }
     .sos-ceir {
       background: var(--gold-bright);
-      color: #022319;
+      color: var(--ink-primary);
       border: 1px solid var(--gold-main);
     }
 
@@ -1703,12 +1712,12 @@
       left: 50%;
       transform: translateX(-50%) translateY(100px);
       background: var(--em-deep);
-      color: #ffffff;
+      color: var(--ink-inverse);
       padding: 0.85rem 1.4rem;
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-lg);
       font-weight: 700;
-      font-size: 0.92rem;
+      font-size: var(--text-sm);
       z-index: 999;
       display: flex;
       align-items: center;
@@ -1744,14 +1753,14 @@
         color: #000000 !important;
       }
       .brand-title span {
-        color: #333333 !important;
+        color: #000000 !important;
       }
       .hero h1 {
         color: #000000 !important;
         font-size: 20pt !important;
       }
       .hero p {
-        color: #333333 !important;
+        color: #000000 !important;
       }
       .urgent-banner {
         border: 1px solid #333333 !important;
@@ -1767,7 +1776,7 @@
       }
       footer {
         background: #ffffff !important;
-        color: #333333 !important;
+        color: #000000 !important;
         border-top: 1px solid #000000 !important;
       }
       .footer-bottom {
@@ -1867,7 +1876,51 @@
         scroll-behavior: auto !important;
       }
     }
-  </style>
+  
+    /* Unified 3-Style Button Hierarchy */
+    .btn-gold {
+      background: var(--gold-bright);
+      color: var(--ink-primary);
+      border: 1px solid rgba(197, 155, 39, 0.35);
+      box-shadow: 0 4px 14px rgba(205, 163, 79, 0.35);
+    }
+    .btn-gold:hover {
+      background: #f7dd9b;
+      box-shadow: 0 6px 20px rgba(205, 163, 79, 0.5);
+    }
+    .btn-emerald {
+      background: var(--em-main);
+      color: var(--ink-inverse);
+      border: 1px solid transparent;
+    }
+    .btn-emerald:hover {
+      background: var(--em-dark);
+    }
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--ink-primary);
+      border: 1px solid var(--border-subtle);
+    }
+    .btn-secondary:hover {
+      background: var(--em-subtle);
+      border-color: var(--em-light);
+    }
+    .hero-actions .btn-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.35);
+      color: var(--ink-inverse);
+    }
+    .hero-actions .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.22);
+    }
+    body.theme-dark .btn-secondary {
+      background: #142e26;
+      color: var(--ink-primary);
+      border-color: var(--border-subtle);
+    }
+    body.theme-dark .btn-secondary:hover {
+      background: #19382e;
+    }</style>
 </head>
 <body>
   <!-- National Tricolor Accent Ribbon -->
@@ -1928,7 +1981,7 @@
     <!-- Hero Content -->
     <div class="hero">
       <div class="hero-badge-container">
-        <span class="hero-badge" data-i18n="heroBadge">🛡️ NATIONAL LOST &amp; STOLEN PHONE RESCUE GUIDE (INDIA)</span>
+        <span class="hero-badge" data-i18n="heroBadge">🛡️ National Lost &amp; Stolen Phone Rescue Guide (India)</span>
         <span class="hero-badge-pill">✓ 100% Zero-Tracking</span>
       </div>
       <h1 data-i18n="heroTitle">Lost your phone?<br>Stay calm. Start here.</h1>
@@ -1936,8 +1989,8 @@
       
       <div class="hero-actions">
         <a href="#checklist" class="btn btn-gold" data-i18n="heroChecklistBtn">Build My Rescue Checklist ↓</a>
-        <a href="https://www.google.com/android/find/" target="_blank" rel="noopener noreferrer" class="btn btn-translucent" data-i18n="heroFindAndroidBtn">Android Device Locator ↗</a>
-        <a href="https://www.icloud.com/find" target="_blank" rel="noopener noreferrer" class="btn btn-translucent" data-i18n="heroFindAppleBtn">Apple Find My ↗</a>
+        <a href="https://www.google.com/android/find/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="heroFindAndroidBtn">Android Device Locator ↗</a>
+        <a href="https://www.icloud.com/find" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="heroFindAppleBtn">Apple Find My ↗</a>
       </div>
     </div>
   </header>
@@ -2503,10 +2556,10 @@
         <h2 id="civicShareHeading" data-i18n="civicShareTitle">Help Friends &amp; Family Stay Protected</h2>
         <p data-i18n="civicShareSubtitle">Share this verified, 100% free public rescue guide so nobody falls for IMEI tracking scams or panic mistakes.</p>
         <div class="civic-share-buttons">
-          <a href="https://api.whatsapp.com/send?text=Lost%20or%20stolen%20phone%20in%20India%3F%20Follow%20this%20step-by-step%20verified%20rescue%20guide%20to%20block%20SIM%2C%20protect%20UPI%2C%20file%20e-FIR%2C%20and%20blacklist%20IMEI%20on%20CEIR%3A%20https%3A%2F%2Fphonegone.myoss.in%2F" target="_blank" rel="noopener noreferrer" class="btn share-btn-wa" id="shareWaBtn" data-i18n="shareWaBtn">
+          <a href="https://api.whatsapp.com/send?text=Lost%20or%20stolen%20phone%20in%20India%3F%20Follow%20this%20step-by-step%20verified%20rescue%20guide%20to%20block%20SIM%2C%20protect%20UPI%2C%20file%20e-FIR%2C%20and%20blacklist%20IMEI%20on%20CEIR%3A%20https%3A%2F%2Fphonegone.myoss.in%2F" target="_blank" rel="noopener noreferrer" class="btn btn-emerald" id="shareWaBtn" data-i18n="shareWaBtn">
             📲 Share on WhatsApp
           </a>
-          <a href="https://t.me/share/url?url=https%3A%2F%2Fphonegone.myoss.in%2F&amp;text=Lost%20or%20stolen%20phone%20rescue%20guide%20for%20India" target="_blank" rel="noopener noreferrer" class="btn share-btn-tg" id="shareTgBtn" data-i18n="shareTgBtn">
+          <a href="https://t.me/share/url?url=https%3A%2F%2Fphonegone.myoss.in%2F&amp;text=Lost%20or%20stolen%20phone%20rescue%20guide%20for%20India" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="shareTgBtn" data-i18n="shareTgBtn">
             ✈️ Share on Telegram
           </a>
           <button type="button" class="btn btn-gold" id="copyShareLinkBtn" data-i18n="copyShareLinkBtn">
@@ -2986,7 +3039,7 @@
           topGovNotice: "🇮🇳 Public Civic Assistance Initiative · Government of India Guidelines · 100% Zero-Tracking",
           themeToggleLabel: "🌓 Contrast Mode",
           topNotice: "<strong>Notice:</strong> PhoneGone is an independent volunteer guide, not affiliated with the Government of India, DoT, or Police. Zero tracking, 100% private.",
-          heroBadge: "🛡️ NATIONAL LOST & STOLEN PHONE RESCUE GUIDE (INDIA)",
+          heroBadge: "🛡️ National Lost & Stolen Phone Rescue Guide (India)",
           heroTitle: "Lost your phone?<br>Stay calm. Start here.",
           heroSubtitle: "A prioritized, bilingual public utility guide to secure UPI, block your SIM, file a valid police report, and permanently blacklist your handset across all telecom networks via official CEIR.",
           heroChecklistBtn: "Build My Rescue Checklist ↓",
